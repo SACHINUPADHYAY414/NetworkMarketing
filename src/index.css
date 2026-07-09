@@ -211,3 +211,16 @@ html {
 .flow-btn:hover::before {
   left: 0;
 }
+@media (max-width: 576px) {
+
+  .navbar-brand img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .navbar-toggler {
+    padding: 4px 6px !important;
+    font-size: 12px !important;
+  }
+
+}

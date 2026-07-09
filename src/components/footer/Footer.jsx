@@ -10,7 +10,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt
 } from "react-icons/fa";
-import { Data } from "../../String/Data";
+import { Data } from "../../string/Data";
 
 const Footer = () => {
   return (

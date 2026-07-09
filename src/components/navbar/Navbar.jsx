@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import { Data } from "../../String/Data";
+import { Data } from "../../string/Data";
 
 const NavbarComponent = () => {
   return (
@@ -11,8 +11,6 @@ const NavbarComponent = () => {
       className="shadow-sm py-2"
     >
       <Container>
-
-        {/* Logo */}
         <Navbar.Brand
           as={NavLink}
           to="/"
