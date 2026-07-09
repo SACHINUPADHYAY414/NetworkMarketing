@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import {Data} from "../../String/Data";
+import {Data} from "../../string/Data";
 
 const WhatsappButton = () => {
 
