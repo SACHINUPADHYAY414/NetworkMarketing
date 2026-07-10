@@ -11,21 +11,52 @@ import {
 const SEO = () => {
   return (
     <>
-      {/* Hero Section */}
       <section
-        className="py-5"
+        className="py-5 position-relative overflow-hidden"
         style={{
-          background: "linear-gradient(135deg,#0d6efd 0%,#0b5ed7 100%)",
-          minHeight: "90vh",
+          background: "linear-gradient(135deg,#030712,#111827,#1e1b4b)",
+          minHeight: "100vh",
           display: "flex",
           alignItems: "center"
         }}
       >
+        <div
+          className="position-absolute rounded-circle"
+          style={{
+            width: "420px",
+            height: "420px",
+            background: "#2563eb",
+            filter: "blur(160px)",
+            top: "-120px",
+            left: "-120px",
+            opacity: 0.35
+          }}
+        />
+
+        <div
+          className="position-absolute rounded-circle"
+          style={{
+            width: "350px",
+            height: "350px",
+            background: "#7c3aed",
+            filter: "blur(150px)",
+            right: "-100px",
+            bottom: "-100px",
+            opacity: 0.25
+          }}
+        />
         <Container>
           <Row className="align-items-center gy-5">
             <Col lg={6}>
-              <Badge bg="light" text="primary" className="mb-3 px-3 py-2">
-                #1 SEO Marketing Agency
+              <Badge
+                pill
+                className="px-4 py-2 mb-4"
+                style={{
+                  background: "rgba(255,255,255,.08)",
+                  backdropFilter: "blur(12px)"
+                }}
+              >
+                🚀 #1 SEO Marketing Agency
               </Badge>
 
               <h1 className="display-4 fw-bold text-white mb-4">
@@ -68,10 +99,17 @@ const SEO = () => {
             </Col>
 
             <Col lg={6}>
-              <Card className="shadow-lg border-0 rounded-4">
+              <Card
+                className="border-0 rounded-5 shadow-lg text-white"
+                style={{
+                  background: "rgba(255,255,255,.08)",
+                  backdropFilter: "blur(18px)",
+                  border: "1px solid rgba(255,255,255,.15)"
+                }}
+              >
                 <Card.Body className="p-5">
                   <div className="d-flex align-items-center mb-4">
-                    <FaSearch className="text-primary me-3" size={35} />
+                    <FaSearch className="text-primary me-2 mb-3" size={35} />
 
                     <div>
                       <h4 className="fw-bold mb-0">SEO Performance</h4>
@@ -83,9 +121,15 @@ const SEO = () => {
                   </div>
 
                   <div className="mb-4">
-                    <p className="mb-2">Organic Traffic</p>
+                    <p className="text-light mb-2">Organic Traffic</p>
 
-                    <div className="progress" style={{ height: 10 }}>
+                    <div
+                      className="progress"
+                      style={{
+                        height: 10,
+                        background: "rgba(255,255,255,.12)"
+                      }}
+                    >
                       <div
                         className="progress-bar bg-success"
                         style={{ width: "92%" }}
@@ -115,9 +159,18 @@ const SEO = () => {
                     </div>
                   </div>
 
-                  <div className="alert alert-success mt-4">
-                    🚀 Website traffic increased by
-                    <strong> 320%</strong> in just 6 months.
+                  <div
+                    className="mt-4 rounded-4 p-3"
+                    style={{
+                      background: "rgba(34,197,94,.15)",
+                      border: "1px solid rgba(34,197,94,.4)"
+                    }}
+                  >
+                    <span className="text-light">
+                      🚀 Website traffic increased by
+                      <strong className="text-warning"> 320%</strong> in just 6
+                      months.
+                    </span>
                   </div>
                 </Card.Body>
               </Card>
@@ -127,12 +180,17 @@ const SEO = () => {
       </section>
 
       {/* Why SEO */}
-      <section className="py-5 bg-light">
+      <section
+        className="py-5"
+        style={{
+          background: "linear-gradient(135deg,#030712,#111827,#1e1b4b)"
+        }}
+      >
         <Container>
           <div className="text-center mb-5">
-            <h2 className="fw-bold">Why Invest in SEO?</h2>
+            <h2 className="fw-bold text-white">Why Invest in SEO?</h2>
 
-            <p className="text-muted">
+            <p className="text-light">
               SEO helps your business attract targeted customers, increase sales
               and build long-term online visibility.
             </p>
@@ -140,7 +198,14 @@ const SEO = () => {
 
           <Row className="g-4">
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow h-100 text-center">
+              <Card
+                className="seo-card border-0 h-100 text-center text-white"
+                style={{
+                  background: "rgba(255,255,255,.08)",
+                  backdropFilter: "blur(18px)",
+                  border: "1px solid rgba(255,255,255,.15)"
+                }}
+              >
                 <Card.Body className="p-4">
                   <FaChartLine size={45} className="text-primary mb-3" />
                   <h5>More Traffic</h5>

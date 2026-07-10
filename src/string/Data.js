@@ -9,7 +9,8 @@ export const Data = {
   address: "Noida, Uttar Pradesh, India",
   phone: "919876543210",
   email: "info@ahgrowthagency.com",
-
+  startUp: "2025",
+  countries:"20+",
   social: {
     facebook: "https://facebook.com",
     instagram: "https://instagram.com",
@@ -61,6 +62,23 @@ export const Data = {
     }
   ],
 
-  WHATSAPP_MESSAGE :
-  "Hello, I want to know more about your services."
+  WHATSAPP_MESSAGE: "Hello, I want to know more about your services."
+};
+
+export const getExperience = () => {
+  const startDate = new Date(Data.startUp);
+  const today = new Date();
+
+  let years = today.getFullYear() - startDate.getFullYear();
+
+  const monthDiff = today.getMonth() - startDate.getMonth();
+
+  if (
+    monthDiff < 0 ||
+    (monthDiff === 0 && today.getDate() < startDate.getDate())
+  ) {
+    years--;
+  }
+
+  return years;
 };

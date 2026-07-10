@@ -8,152 +8,127 @@ import {
   FaYoutube,
   FaPhoneAlt,
   FaEnvelope,
-  FaMapMarkerAlt
+  FaMapMarkerAlt,
+  FaArrowRight
 } from "react-icons/fa";
+
 import { Data } from "../../string/Data";
 
 const Footer = () => {
   return (
     <footer
-      className="text-light pt-5 pb-3"
+      className="footer-section position-relative overflow-hidden text-light"
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)), url(${Data.footerBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
+        background: "linear-gradient(135deg,#030712,#111827,#1e1b4b)"
       }}
     >
-      <Container>
-        <Row className="gy-4">
+      <div className="footer-glow footer-glow-left"></div>
+
+      <div className="footer-glow footer-glow-right"></div>
+
+      <Container className="position-relative py-4 pb-3">
+        <Row className="g-4">
           <Col lg={4} md={6}>
-            <h4 className="fw-bold text-white mb-3">{Data.companyName}</h4>
+            <div className="footer-box h-100">
+              <h2 className="fw-bold text-warning mb-3">{Data.companyName}</h2>
 
-            <p className="text-white-50">
-              We help businesses grow with innovative digital marketing
-              strategies including SEO, Social Media Marketing, Content
-              Creation, and Performance Marketing.
-            </p>
+              <p className="footer-text">
+                We help businesses grow with innovative Digital Marketing
+                strategies including SEO, Social Media Marketing, Google Ads,
+                Content Marketing, Performance Marketing and Website
+                Development.
+              </p>
 
-            <div className="d-flex gap-3 fs-5 mt-3">
-              <a href="#" className="text-white">
-                <FaFacebookF />
-              </a>
+              <div className="d-flex gap-3 mt-4">
+                <a href="#" className="footer-social">
+                  <FaFacebookF />
+                </a>
 
-              <a href="#" className="text-white">
-                <FaInstagram />
-              </a>
+                <a href="#" className="footer-social">
+                  <FaInstagram />
+                </a>
 
-              <a href="#" className="text-white">
-                <FaLinkedinIn />
-              </a>
+                <a href="#" className="footer-social">
+                  <FaLinkedinIn />
+                </a>
 
-              <a href="#" className="text-white">
-                <FaYoutube />
-              </a>
+                <a href="#" className="footer-social">
+                  <FaYoutube />
+                </a>
+              </div>
             </div>
           </Col>
 
-          {/* Quick Links */}
           <Col lg={2} md={6}>
-            <h5 className="fw-bold mb-3">Quick Links</h5>
+            <div className="footer-box h-100">
+              <h5 className="fw-bold text-warning mb-4">Quick Links</h5>
 
-            <ul className="list-unstyled">
-              <li className="mb-2">
-                <Link to="/" className="text-decoration-none text-white-50">
-                  Home
-                </Link>
-              </li>
-
-              <li className="mb-2">
-                <Link
-                  to="/about"
-                  className="text-decoration-none text-white-50"
-                >
-                  About
-                </Link>
-              </li>
-
-              <li className="mb-2">
-                <Link
-                  to="/services"
-                  className="text-decoration-none text-white-50"
-                >
-                  Services
-                </Link>
-              </li>
-
-              <li className="mb-2">
-                <Link to="/blog" className="text-decoration-none text-white-50">
-                  Blog
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-decoration-none text-white-50"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
+              <ul className="list-unstyled footer-links">
+                <li className="mb-2">Home</li>
+                <li className="mb-2">About Us</li>
+                <li className="mb-2">Services</li>
+                <li className="mb-2">Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
           </Col>
 
-          {/* Services */}
           <Col lg={3} md={6}>
-            <h5 className="fw-bold mb-3">Our Services</h5>
-
-            <ul className="list-unstyled text-white-50">
-              <li className="mb-2">✔ Search Engine Optimization</li>
-              <li className="mb-2">✔ Social Media Marketing</li>
-              <li className="mb-2">✔ Content Creation</li>
-              <li className="mb-2">✔ Performance Marketing</li>
-              <li>✔ Brand Promotion</li>
-            </ul>
+            <div className="footer-box h-100">
+              <h5 className="fw-bold text-warning mb-4">Our Services</h5>
+              <ul className="list-unstyled footer-links">
+                <li className="mb-2">Search Engine Optimization</li>
+                <li className="mb-2">Social Media Marketing</li>
+                <li className="mb-2">Google Ads</li>
+                <li className="mb-2">Performance Marketing</li>
+                <li className="mb-2">Website Development</li>
+                <li className="mb-2">Brand Promotion</li>
+              </ul>
+            </div>
           </Col>
 
-          {/* Contact */}
           <Col lg={3} md={6}>
-            <h5 className="fw-bold mb-3">Contact Us</h5>
+            <div className="footer-box h-100">
+              <h5 className="fw-bold text-warning mb-4">Contact Us</h5>
 
-            <p className="text-white-50">
-              <FaMapMarkerAlt className="me-2" />
-              {Data.address}
-            </p>
+              <div className="footer-contact d-flex align-items-start gap-2 mb-2">
+                <FaMapMarkerAlt className="mt-1" />
+                <span>{Data.address}</span>
+              </div>
 
-            <p className="text-white-50">
-              <FaPhoneAlt className="me-2" />
-              {Data.phone}
-            </p>
+              <div className="footer-contact d-flex align-items-center gap-2 mb-2">
+                <FaPhoneAlt />
+                <span>{Data.phone}</span>
+              </div>
 
-            <p className="text-white-50">
-              <FaEnvelope className="me-2" />
-              {Data.email}
-            </p>
+              <div className="footer-contact d-flex align-items-center gap-2 mb-2">
+                <FaEnvelope />
+                <span>{Data.email}</span>
+              </div>
+            </div>
           </Col>
         </Row>
 
-        <hr className="border-secondary my-4" />
+        <hr className="footer-divider" />
 
-        <Row>
+        <Row className="align-items-center">
           <Col md={6} className="text-center text-md-start">
-            <p className="mb-0 text-white-50">
+            <p className="mb-0">
               © {new Date().getFullYear()} {Data.companyName}. All Rights
               Reserved.
             </p>
           </Col>
 
-          <Col md={6} className="text-center text-md-end mt-2 mt-md-0">
-            <Link
-              to="/privacy-policy"
-              className="text-decoration-none text-white-50 me-3"
-            >
-              Privacy Policy
-            </Link>
+          <Col md={6} className="mt-3 mt-md-0">
+            <div className="d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-2 gap-md-4">
+              <div className="footer-bottom-link fw-semibold">
+                Privacy Policy
+              </div>
 
-            <Link to="/terms" className="text-decoration-none text-white-50">
-              Terms & Conditions
-            </Link>
+              <div className="footer-bottom-link fw-semibold">
+                Terms & Conditions
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>

@@ -5,15 +5,22 @@ import WhatsUpButton from "./components/whatsupButton/WhatsupButton";
 
 import Home from "./pages/home/LandingPage";
 import SEO from "./pages/seo/Seo";
+import AboutUs from "./pages/aboutUs/aboutUs";
+import Contact from "./pages/contact/Contact";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/seo" element={<SEO />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer />

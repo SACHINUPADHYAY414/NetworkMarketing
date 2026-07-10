@@ -1,50 +1,28 @@
 import { useEffect, useState } from "react";
+import { Data, getExperience } from "../../string/Data";
+import TrustedBrands from "../trustedBrands/TrustedBrands";
+import Services from "../services/Services";
 
 const slides = [
   {
-    image:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1800",
-    title: "Build Your Dream Business",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1800",
+    title: "Grow Your Business With Digital Marketing",
     description:
-      "Join thousands of successful entrepreneurs. Grow your network and achieve financial freedom.",
-    button: "Join Now",
-    members: "25K+",
-    countries: "150+",
-    years: "10+",
+      "We help brands increase traffic, generate qualified leads and grow revenue with SEO, Google Ads, Social Media Marketing and Web Solutions."
+  },
+  {
+    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1800",
+    title: "Turn Visitors Into Loyal Customers",
+    description:
+      "Our data-driven marketing strategies help businesses improve online visibility and achieve measurable growth."
   },
   {
     image:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1800",
-    title: "Earn Unlimited Income",
+    title: "SEO, Ads & Social Media Experts",
     description:
-      "Create multiple income streams with our powerful network marketing system.",
-    button: "Start Today",
-    members: "50K+",
-    countries: "180+",
-    years: "12+",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1800",
-    title: "Grow Your Team",
-    description:
-      "Build a strong team, become a leader and unlock exciting rewards every month.",
-    button: "Join Team",
-    members: "75K+",
-    countries: "200+",
-    years: "15+",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1800",
-    title: "Your Success Starts Here",
-    description:
-      "Learn, earn and lead with India's fastest growing network marketing company.",
-    button: "Get Started",
-    members: "100K+",
-    countries: "220+",
-    years: "20+",
-  },
+      "From search rankings to paid campaigns, we create digital strategies that deliver real business results."
+  }
 ];
 
 export default function LandingPage() {
@@ -53,66 +31,78 @@ export default function LandingPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 10000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section
-      className="hero-section"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(${slides[currentSlide].image})`,
-      }}
-    >
-      <div className="container">
-        <div className="row align-items-center min-vh-100">
-          <div className="col-lg-7">
+    <>
+      <section
+        className="hero-section"
+        style={{
+          backgroundImage: `linear-gradient(
+rgba(3,7,18,.75),
+rgba(3,7,18,.75)
+),
+url(${slides[currentSlide].image})`
+        }}
+      >
+        <div className="container">
+          <div className="row align-items-center min-vh-100">
+            {/* LEFT CONTENT */}
 
-            <div key={currentSlide} className="hero-content">
+            <div className="col-lg-7">
+              <div className="hero-content" key={currentSlide}>
+                <span className="hero-badge">🚀 Digital Marketing Agency</span>
 
-              <h1 className="hero-title">
-                {slides[currentSlide].title}
-              </h1>
+                <h1 className="hero-title mt-4">
+                  {slides[currentSlide].title}
+                </h1>
 
-              <p className="hero-desc">
-                {slides[currentSlide].description}
-              </p>
+                <p className="hero-description">
+                  {slides[currentSlide].description}
+                </p>
 
-              <div className="mt-4 d-flex flex-wrap gap-3">
-                <button className="btn btn-warning btn-lg px-4">
-                  {slides[currentSlide].button}
-                </button>
+                <div className="d-flex gap-3 flex-wrap mt-4">
+                  <button className="btn btn-warning btn-lg rounded-pill px-5 fw-bold">
+                    Get Free Consultation
+                  </button>
 
-                <button className="btn btn-outline-light btn-lg px-4">
-                  Learn More
-                </button>
+                  <button className="btn btn-outline-light btn-lg rounded-pill px-5">
+                    View Portfolio
+                  </button>
+                </div>
+
+                {/* STATS */}
+
+                <div className="row mt-5 g-4">
+                  <div className="col-4">
+                    <h2>500+</h2>
+
+                    <p>Happy Clients</p>
+                  </div>
+
+                  <div className="col-4">
+                    <h2>1500+</h2>
+
+                    <p>Projects</p>
+                  </div>
+
+                  <div className="col-4">
+                    <h2>{getExperience()}+</h2>
+
+                    <p>Years</p>
+                  </div>
+                </div>
               </div>
-
-              <div className="row text-center mt-5 stats">
-
-                <div className="col-4">
-                  <h2>{slides[currentSlide].members}</h2>
-                  <p>Members</p>
-                </div>
-
-                <div className="col-4">
-                  <h2>{slides[currentSlide].countries}</h2>
-                  <p>Countries</p>
-                </div>
-
-                <div className="col-4">
-                  <h2>{slides[currentSlide].years}</h2>
-                  <p>Years</p>
-                </div>
-
-              </div>
-
             </div>
-
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <TrustedBrands />
+      <Services/>
+    </>
   );
 }
