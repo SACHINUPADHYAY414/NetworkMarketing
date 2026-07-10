@@ -1,6 +1,95 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { ContactData } from "../../string/Data";
+import { getData, postData } from "../../components/api";
+import ENDPOINTS from "../../components/api/allEndpoints";
 
 const Contact = () => {
+  const [services, setServices] = useState([
+    {
+      id: 1,
+      name: "SEO Optimization"
+    },
+    {
+      id: 2,
+      name: "Social Media Marketing"
+    },
+    {
+      id: 3,
+      name: "Google Ads"
+    },
+    {
+      id: 4,
+      name: "Content Marketing"
+    },
+    {
+      id: 5,
+      name: "Website Development"
+    },
+    {
+      id: 6,
+      name: "Email Marketing"
+    }
+  ]);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: ""
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  // useEffect(() => {
+  //   loadServices();
+  // }, []);
+
+  const loadServices = async () => {
+    try {
+      const res = await getData(ENDPOINTS.SERVICES);
+
+      console.log("API Response:", res.data);
+
+      const data = Array.isArray(res.data)
+        ? res.data
+        : res.data.data || res.data.content || [];
+
+      setServices(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    try {
+      const res = await postData(ENDPOINTS.CONTACT, formData);
+
+      console.log(res.data);
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: ""
+      });
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <section
       className="py-5"
@@ -10,81 +99,79 @@ const Contact = () => {
       }}
     >
       <div className="container">
-        {/* Heading */}
         <div className="text-center text-white mb-5">
-          <h1 className="display-4 fw-bold">Let's Grow Your Business 🚀</h1>
-          <p className="lead text-light">
-            We'd love to hear about your project. Contact our Digital Marketing
-            experts today.
-          </p>
+          <h1>{ContactData.heading}</h1>
+          <p>{ContactData.subHeading}</p>
         </div>
 
-        <div className="row g-4 align-items-center">
-          {/* Contact Form */}
+        <div className="row g-4">
           <div className="col-lg-7">
             <div
               className="card border-0 shadow-lg p-4"
-              style={{ borderRadius: "20px" }}
+              style={{ borderRadius: 20 }}
             >
-              <h3 className="fw-bold mb-4 text-primary">Send us a Message</h3>
+              <h3 className="text-primary mb-4">Send us a Message</h3>
 
-              <form>
+              <form onSubmit={submitHandler}>
                 <div className="row">
-                  <div className="col-md-6 mb-3">
-                    <label className="form-label fw-semibold">Full Name</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter your name"
-                    />
-                  </div>
+                  {ContactData.formFields.map((field) => (
+                    <div className={`${field.col} mb-2`} key={field.name}>
+                      <label className="form-label fw-semibold">
+                        {field.label}
+                      </label>
 
-                  <div className="col-md-6 mb-3">
-                    <label className="form-label fw-semibold">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Enter your email"
-                    />
-                  </div>
+                      <input
+                        type={field.type}
+                        name={field.name}
+                        value={formData[field.name]}
+                        required
+                        onChange={handleChange}
+                        className="form-control"
+                        placeholder={field.placeholder}
+                      />
+                    </div>
+                  ))}
                 </div>
 
-                <div className="mb-3">
-                  <label className="form-label fw-semibold">Phone Number</label>
-                  <input
-                    type="tel"
-                    className="form-control"
-                    placeholder="Enter phone number"
-                  />
-                </div>
-
-                <div className="mb-3">
+                <div className="mb-2">
                   <label className="form-label fw-semibold">
                     Select Service
                   </label>
 
-                  <select className="form-select">
-                    <option>SEO Optimization</option>
-                    <option>Social Media Marketing</option>
-                    <option>Google Ads</option>
-                    <option>Content Marketing</option>
-                    <option>Website Development</option>
-                    <option>Email Marketing</option>
+                  <select
+                    className="form-select"
+                    name="service"
+                    value={formData.service}
+                    onChange={handleChange}
+                  >
+                    <option value="">Select Service</option>
+
+                    {Array.isArray(services) &&
+                      services.map((service) => (
+                        <option
+                          key={service.id ?? service}
+                          value={service.id ?? service}
+                        >
+                          {service.name ?? service}
+                        </option>
+                      ))}
                   </select>
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-3">
                   <label className="form-label fw-semibold">Message</label>
+
                   <textarea
-                    rows="5"
+                    rows={5}
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     className="form-control"
                     placeholder="Tell us about your project..."
-                  ></textarea>
+                  />
                 </div>
 
-                <button className="btn btn-primary btn-lg w-100">
+                <button className="btn btn-primary w-100 btn-lg" type="submit">
                   <i className="bi bi-send-fill me-2"></i>
                   Send Message
                 </button>
@@ -92,78 +179,56 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Info */}
           <div className="col-lg-5">
             <div
               className="card border-0 shadow-lg p-4 text-white"
               style={{
-                background: "linear-gradient(135deg,#2563eb,#4f46e5,#7c3aed)",
-                borderRadius: "20px"
+                borderRadius: 20,
+                background: "linear-gradient(135deg,#2563eb,#4f46e5,#7c3aed)"
               }}
             >
-              <h3 className="fw-bold mb-4">Contact Information</h3>
+              <h3 className="mb-4">Contact Information</h3>
 
-              <div className="d-flex align-items-center mb-4">
-                <div className="fs-2 me-3">
-                  <i className="bi bi-geo-alt-fill"></i>
-                </div>
+              {ContactData.contactInfo.map((item) => (
+                <div
+                  className="d-flex align-items-center mb-4"
+                  key={item.title}
+                >
+                  <div className="fs-2 me-3">
+                    <i className={item.icon}></i>
+                  </div>
 
-                <div>
-                  <h5 className="mb-1">Office</h5>
-                  <p className="mb-0">Patna, Bihar, India</p>
+                  <div>
+                    <h5>{item.title}</h5>
+                    <p className="mb-0">{item.value}</p>
+                  </div>
                 </div>
+              ))}
+
+              <hr />
+
+              <h5>Follow Us</h5>
+
+              <div className="d-flex gap-3 mt-3">
+                {ContactData.socialLinks.map((social) => (
+                  <a
+                    key={social.icon}
+                    href={social.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-light rounded-circle"
+                  >
+                    <i className={`${social.icon} ${social.color}`}></i>
+                  </a>
+                ))}
               </div>
 
-              <div className="d-flex align-items-center mb-4">
-                <div className="fs-2 me-3">
-                  <i className="bi bi-envelope-fill"></i>
-                </div>
+              <div className="mt-4">
+                <h4>Ready to boost your business?</h4>
 
-                <div>
-                  <h5 className="mb-1">Email</h5>
-                  <p className="mb-0">info@digitalagency.com</p>
-                </div>
-              </div>
-
-              <div className="d-flex align-items-center mb-4">
-                <div className="fs-2 me-3">
-                  <i className="bi bi-telephone-fill"></i>
-                </div>
-
-                <div>
-                  <h5 className="mb-1">Phone</h5>
-                  <p className="mb-0">+91 98765 43210</p>
-                </div>
-              </div>
-
-              <hr className="border-light" />
-
-              <h5 className="mb-3">Follow Us</h5>
-
-              <div className="d-flex gap-3">
-                <a href="/" className="btn btn-light rounded-circle">
-                  <i className="bi bi-facebook text-primary"></i>
-                </a>
-
-                <a href="/" className="btn btn-light rounded-circle">
-                  <i className="bi bi-instagram text-danger"></i>
-                </a>
-
-                <a href="/" className="btn btn-light rounded-circle">
-                  <i className="bi bi-linkedin text-primary"></i>
-                </a>
-
-                <a href="/" className="btn btn-light rounded-circle">
-                  <i className="bi bi-twitter-x"></i>
-                </a>
-              </div>
-
-              <div className="mt-5">
-                <h4 className="fw-bold">Ready to boost your business?</h4>
-
-                <p className="text-light">
+                <p>
                   Let's build powerful marketing strategies that increase your
-                  traffic, leads, and sales.
+                  traffic, leads and sales.
                 </p>
               </div>
             </div>

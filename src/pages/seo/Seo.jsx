@@ -12,7 +12,7 @@ const SEO = () => {
   return (
     <>
       <section
-        className="py-5 position-relative overflow-hidden"
+        className="py-5 position-relative overflow-hidden text-center text-md-start"
         style={{
           background: "linear-gradient(135deg,#030712,#111827,#1e1b4b)",
           minHeight: "100vh",
@@ -50,7 +50,7 @@ const SEO = () => {
             <Col lg={6}>
               <Badge
                 pill
-                className="px-4 py-2 mb-4"
+                className="px-2 py-2"
                 style={{
                   background: "rgba(255,255,255,.08)",
                   backdropFilter: "blur(12px)"
@@ -59,23 +59,23 @@ const SEO = () => {
                 🚀 #1 SEO Marketing Agency
               </Badge>
 
-              <h1 className="display-4 fw-bold text-white mb-4">
+              <h1 className="display-5 fw-bold text-white mb-2">
                 Grow Your Business
                 <br />
                 With Professional
                 <span className="text-warning"> SEO Services</span>
               </h1>
 
-              <p className="lead text-white mb-4">
+              <p className="lead text-white mb-3">
                 Increase your Google rankings, generate high-quality leads, and
                 boost organic traffic with our expert SEO strategies.
               </p>
 
-              <div className="d-flex flex-wrap gap-3">
-                <Button size="lg" variant="warning">
+              <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                <Button size="md" variant="warning">
                   Get Free SEO Audit
                 </Button>
-                <Button className="flow-btn" size="lg" variant="outline-light">
+                <Button className="flow-btn" size="md" variant="outline-light">
                   View Packages
                 </Button>
               </div>
