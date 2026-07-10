@@ -229,12 +229,12 @@ html {
 /* HERO */
 
 .about-hero {
-  padding: 100px 0;
+  padding: 40px 0;
   background: linear-gradient(135deg, #f8faff, #eaf2ff);
 }
 
 .about-hero h1 {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 800;
   line-height: 1.15;
 }
@@ -250,26 +250,20 @@ html {
 }
 
 .logo-box {
-  width: 350px;
-  height: 350px;
-
+  width: 260px;
+  height: 260px;
   margin: auto;
-
   background: white;
-
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
-
   animation: float 4s infinite;
 }
 
 .logo-box img {
-  width: 70%;
+  width: 75.9%;
   border-radius: 20px;
 }
 
@@ -305,20 +299,10 @@ html {
 
 /* CONTENT */
 
-.about-content {
-  padding: 90px 0;
-}
-
 .section-title {
   text-align: center;
 
   margin-bottom: 50px;
-}
-
-.section-title h2 {
-  font-size: 42px;
-
-  font-weight: 800;
 }
 
 .glass-card {

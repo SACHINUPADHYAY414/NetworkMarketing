@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="about-page">
       {/* HERO */}
-      <section className="about-hero">
+      <section className="about-hero text-center text-md-start">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -30,7 +30,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 text-center">
+            <div className="col-lg-6 text-center text-md-end mt-5 mt-md-0">
               <div className="logo-box">
                 <img src={Data.logo} alt="logo" />
               </div>
@@ -60,7 +60,7 @@ const About = () => {
 
             <div className="col-md-3">
               <div className="stat-card">
-                <h2>{getExperience()}</h2>
+                <h2>{getExperience()}+</h2>
                 <p>Years Experience</p>
               </div>
             </div>
@@ -77,10 +77,10 @@ const About = () => {
 
       {/* ABOUT */}
 
-      <section className="about-content">
+      <section className="pb-4 mt-3 mt-md-4">
         <div className="container">
-          <div className="section-title">
-            <h2>Why Choose Us?</h2>
+          <div className="text-center mb-3 mb-md-4">
+            <h2 className="text-center fw-semibold">Why Choose Us?</h2>
 
             <p>
               We combine creativity, technology and strategy to build brands
@@ -88,7 +88,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="row g-4">
+          <div className="row g-4  justify-content-center text-center">
             <div className="col-lg-4">
               <div className="glass-card">
                 <div className="icon">🚀</div>

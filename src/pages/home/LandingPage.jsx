@@ -54,9 +54,9 @@ url(${slides[currentSlide].image})`
 
             <div className="col-lg-7">
               <div className="hero-content" key={currentSlide}>
-                <span className="hero-badge">🚀 Digital Marketing Agency</span>
+                <span className="hero-badge text-warning fw-semibold fst-italic">🚀 Digital Marketing Agency</span>
 
-                <h1 className="hero-title mt-4">
+                <h1 className="hero-title">
                   {slides[currentSlide].title}
                 </h1>
 
@@ -64,19 +64,17 @@ url(${slides[currentSlide].image})`
                   {slides[currentSlide].description}
                 </p>
 
-                <div className="d-flex gap-3 flex-wrap mt-4">
-                  <button className="btn btn-warning btn-lg rounded-pill px-5 fw-bold">
+                <div className="d-flex gap-3 flex-wrap mt-4 justify-content-center justify-content-md-start">
+                  <button className="btn btn-warning btn-lg rounded-pill px-3 px-md-4 fw-semibold fs-6">
                     Get Free Consultation
                   </button>
 
-                  <button className="btn btn-outline-light btn-lg rounded-pill px-5">
+                  <button className="btn btn-outline-light btn-lg rounded-pill px-3 px-md-4 fw-semibold">
                     View Portfolio
                   </button>
                 </div>
 
-                {/* STATS */}
-
-                <div className="row mt-5 g-4">
+                <div className="row mt-3 g-4">
                   <div className="col-4">
                     <h2>500+</h2>
 
@@ -102,7 +100,7 @@ url(${slides[currentSlide].image})`
       </section>
 
       <TrustedBrands />
-      <Services/>
+      <Services />
     </>
   );
 }

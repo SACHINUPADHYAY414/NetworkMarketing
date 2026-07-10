@@ -30,16 +30,18 @@ const Footer = () => {
         <Row className="g-4">
           <Col lg={4} md={6}>
             <div className="footer-box h-100">
-              <h2 className="fw-bold text-warning mb-3">{Data.companyName}</h2>
+              <h2 className="fw-bold text-warning mb-3 text-md-start text-center">
+                {Data.companyName}
+              </h2>
 
-              <p className="footer-text">
+              <p className="footer-text text-md-start text-center">
                 We help businesses grow with innovative Digital Marketing
                 strategies including SEO, Social Media Marketing, Google Ads,
                 Content Marketing, Performance Marketing and Website
                 Development.
               </p>
 
-              <div className="d-flex gap-3 mt-4">
+              <div className="d-flex gap-3 mt-2 mt-md-4 px-3 px-md-0">
                 <a href="#" className="footer-social">
                   <FaFacebookF />
                 </a>
@@ -60,22 +62,24 @@ const Footer = () => {
           </Col>
 
           <Col lg={2} md={6}>
-            <div className="footer-box h-100">
-              <h5 className="fw-bold text-warning mb-4">Quick Links</h5>
+            <div className="footer-box h-100 px-3 px-md-0">
+              <h5 className="fw-bold text-warning mb-2 mb-md-4">Quick Links</h5>
 
               <ul className="list-unstyled footer-links">
                 <li className="mb-2">Home</li>
                 <li className="mb-2">About Us</li>
                 <li className="mb-2">Services</li>
                 <li className="mb-2">Blog</li>
-                <li>Contact</li>
+                <li className="mb-2">Contact</li>
               </ul>
             </div>
           </Col>
 
           <Col lg={3} md={6}>
-            <div className="footer-box h-100">
-              <h5 className="fw-bold text-warning mb-4">Our Services</h5>
+            <div className="footer-box h-100 px-3 px-md-0">
+              <h5 className="fw-bold text-warning mb-2 mb-md-4">
+                Our Services
+              </h5>
               <ul className="list-unstyled footer-links">
                 <li className="mb-2">Search Engine Optimization</li>
                 <li className="mb-2">Social Media Marketing</li>
@@ -88,8 +92,8 @@ const Footer = () => {
           </Col>
 
           <Col lg={3} md={6}>
-            <div className="footer-box h-100">
-              <h5 className="fw-bold text-warning mb-4">Contact Us</h5>
+            <div className="footer-box h-100 px-3 px-md-0">
+              <h5 className="fw-bold text-warning mb-2 mb-md-4">Contact Us</h5>
 
               <div className="footer-contact d-flex align-items-start gap-2 mb-2">
                 <FaMapMarkerAlt className="mt-1" />
@@ -121,13 +125,9 @@ const Footer = () => {
 
           <Col md={6} className="mt-3 mt-md-0">
             <div className="d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-2 gap-md-4">
-              <div className="footer-bottom-link fw-semibold">
-                Privacy Policy
-              </div>
+              <div className="footer-bottom-link">Privacy Policy</div>
 
-              <div className="footer-bottom-link fw-semibold">
-                Terms & Conditions
-              </div>
+              <div className="footer-bottom-link">Terms & Conditions</div>
             </div>
           </Col>
         </Row>

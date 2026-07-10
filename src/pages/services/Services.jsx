@@ -105,7 +105,7 @@ const Services = () => {
   );
   return (
     <section
-      className="py-5 position-relative overflow-hidden"
+      className="py-4 position-relative overflow-hidden"
       style={{
         background: "linear-gradient(135deg,#030712,#111827,#1e1b4b)"
       }}
@@ -139,11 +139,11 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="row">
+        <div className="row text-center">
           {services.slice(0, 6).map((service, index) => card(service, index))}
         </div>
         <div className={`collapse ${showAll ? "show" : ""}`}>
-          <div className="row">
+          <div className="row text-center">
             {services
               .slice(6)
               .map((service, index) =>
@@ -152,9 +152,9 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="text-center pt-3">
+        <div className="text-center">
           <button
-            className="btn btn-warning btn-lg rounded-pill px-3 fw-bold"
+            className="btn btn-warning btn-lg rounded-pill px-3 fw-semibold fs-6 font-monospace"
             onClick={() => setShowAll(!showAll)}
           >
             {showAll ? "Show Less ▲" : "Explore All Services 🚀"}
