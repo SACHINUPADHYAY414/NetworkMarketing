@@ -1,4 +1,5 @@
 import React from "react";
+import { Data } from "../../string/Data";
 
 const TrustedBrands = () => {
   const brands = [
@@ -114,17 +115,21 @@ const TrustedBrands = () => {
 
         <div className="row text-center text-white mt-4 mt-md-5">
           <div className="col-md-4 mb-1 mb-md-0">
-            <h2 className="fw-bold text-warning mb-0">500+</h2>
+            <h2 className="fw-bold text-warning mb-0">
+              {Data.BusinessesServed}
+            </h2>
             <p>Businesses Served</p>
           </div>
 
           <div className="col-md-4 mb-1 mb-md-0">
-            <h2 className="fw-bold text-warning mb-0">25+</h2>
+            <h2 className="fw-bold text-warning mb-0">{Data.Experts}</h2>
             <p>Marketing Experts</p>
           </div>
 
           <div className="col-md-4 mb-1 mb-md-0">
-            <h2 className="fw-bold text-warning mb-0">98%</h2>
+            <h2 className="fw-bold text-warning mb-0">
+              {Data.ClientSatisfaction}
+            </h2>
             <p>Client Satisfaction</p>
           </div>
         </div>

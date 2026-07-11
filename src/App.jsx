@@ -8,6 +8,7 @@ import SEO from "./pages/seo/Seo";
 import AboutUs from "./pages/aboutUs/aboutUs";
 import Contact from "./pages/contact/Contact";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
+import Faq from "./pages/faq/Faq";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/seo" element={<SEO />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<Faq/>}/>
       </Routes>
 
       <Footer />

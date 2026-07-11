@@ -36,10 +36,11 @@ const NavbarComponent = () => {
 
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-center">
-            {Data.navLinks.map((item, index) => {
+            {Data.navLinks.map((item) => {
               if (item.children) {
                 return (
                   <div
+                    key={item.path || item.name}
                     className="nav-item dropdown services-menu"
                     onMouseEnter={() =>
                       window.innerWidth >= 992 && setShowServices(true)
@@ -63,9 +64,9 @@ const NavbarComponent = () => {
                     <div
                       className={`dropdown-menu ${showServices ? "show" : ""}`}
                     >
-                      {item.children.map((service, i) => (
+                      {item.children.map((service) => (
                         <NavLink
-                          key={i}
+                          key={service.path}
                           to={service.path}
                           className="dropdown-item"
                           onClick={() => {
@@ -83,6 +84,7 @@ const NavbarComponent = () => {
 
               return (
                 <Nav.Link
+                  key={item.path || item.name}
                   as={NavLink}
                   to={item.path}
                   onClick={() => setExpanded(false)}

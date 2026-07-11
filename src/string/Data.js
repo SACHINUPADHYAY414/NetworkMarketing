@@ -5,19 +5,22 @@ export const Data = {
   logo: Logo,
   companyName: "AH GROWTH AGENCY",
   footerBg: FooterBg,
-
   address: "Noida, Uttar Pradesh, India",
   phone: "919876543210",
   email: "info@ahgrowthagency.com",
   startUp: "2025",
-  countries:"20+",
+  countries: "20+",
   social: {
     facebook: "https://facebook.com",
     instagram: "https://instagram.com",
     linkedin: "https://linkedin.com",
     youtube: "https://youtube.com"
   },
-
+  HappyClient: "120+",
+  Projects: "1500+",
+  BusinessesServed:"500+",
+  Experts:"25+",
+  ClientSatisfaction: "98%",
   navLinks: [
     {
       name: "Home",
@@ -98,7 +101,7 @@ export const ContactData = {
     "Google Ads",
     "Content Marketing",
     "Website Development",
-    "Email Marketing",
+    "Email Marketing"
   ],
 
   formFields: [
@@ -107,62 +110,62 @@ export const ContactData = {
       type: "text",
       name: "fullName",
       placeholder: "Enter your name",
-      col: "col-md-6",
+      col: "col-md-6"
     },
     {
       label: "Email Address",
       type: "email",
       name: "email",
       placeholder: "Enter your email",
-      col: "col-md-6",
+      col: "col-md-6"
     },
     {
       label: "Phone Number",
       type: "tel",
       name: "phone",
       placeholder: "Enter phone number",
-      col: "col-12",
-    },
+      col: "col-12"
+    }
   ],
 
   contactInfo: [
     {
       title: "Office",
       value: "Noida, Uttar Pradesh, India",
-      icon: "bi bi-geo-alt-fill",
+      icon: "bi bi-geo-alt-fill"
     },
     {
       title: "Email",
       value: "info@ahgrowthagency.com",
-      icon: "bi bi-envelope-fill",
+      icon: "bi bi-envelope-fill"
     },
     {
       title: "Phone",
       value: "+91 9876543210",
-      icon: "bi bi-telephone-fill",
-    },
+      icon: "bi bi-telephone-fill"
+    }
   ],
 
   socialLinks: [
     {
       icon: "bi bi-facebook",
       color: "text-primary",
-      url: "https://facebook.com",
+      url: "https://facebook.com"
     },
     {
       icon: "bi bi-instagram",
       color: "text-danger",
-      url: "https://instagram.com",
+      url: "https://instagram.com"
     },
     {
       icon: "bi bi-linkedin",
       color: "text-primary",
-      url: "https://linkedin.com",
+      url: "https://linkedin.com"
     },
     {
       icon: "bi bi-twitter-x",
       color: "text-dark",
-      url: "https://x.com",
-    },
-  ],
+      url: "https://x.com"
+    }
+  ]
 };

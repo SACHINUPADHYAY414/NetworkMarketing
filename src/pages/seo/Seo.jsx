@@ -7,6 +7,7 @@ import {
   FaUsers,
   FaCheckCircle
 } from "react-icons/fa";
+import { Data, getExperience } from "../../string/Data";
 
 const SEO = () => {
   return (
@@ -82,17 +83,19 @@ const SEO = () => {
 
               <Row className="mt-5 text-center">
                 <Col xs={4}>
-                  <h3 className="fw-bold text-warning">250+</h3>
+                  <h3 className="fw-bold text-warning">{Data.HappyClient}</h3>
                   <small className="text-white">Happy Clients</small>
                 </Col>
 
                 <Col xs={4}>
-                  <h3 className="fw-bold text-warning">98%</h3>
+                  <h3 className="fw-bold text-warning">
+                    {Data.ClientSatisfaction}
+                  </h3>
                   <small className="text-white">Success Rate</small>
                 </Col>
 
                 <Col xs={4}>
-                  <h3 className="fw-bold text-warning">8+</h3>
+                  <h3 className="fw-bold text-warning">{getExperience()}+</h3>
                   <small className="text-white">Years Experience</small>
                 </Col>
               </Row>

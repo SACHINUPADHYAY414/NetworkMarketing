@@ -50,15 +50,13 @@ url(${slides[currentSlide].image})`
       >
         <div className="container">
           <div className="row align-items-center min-vh-100">
-            {/* LEFT CONTENT */}
-
             <div className="col-lg-7">
               <div className="hero-content" key={currentSlide}>
-                <span className="hero-badge text-warning fw-semibold fst-italic">🚀 Digital Marketing Agency</span>
+                <span className="hero-badge text-warning fw-semibold fst-italic">
+                  🚀 Digital Marketing Agency
+                </span>
 
-                <h1 className="hero-title">
-                  {slides[currentSlide].title}
-                </h1>
+                <h1 className="hero-title">{slides[currentSlide].title}</h1>
 
                 <p className="hero-description">
                   {slides[currentSlide].description}
@@ -76,20 +74,17 @@ url(${slides[currentSlide].image})`
 
                 <div className="row mt-3 g-4">
                   <div className="col-4">
-                    <h2>500+</h2>
-
+                    <h2>{Data.HappyClient}</h2>
                     <p>Happy Clients</p>
                   </div>
 
                   <div className="col-4">
-                    <h2>1500+</h2>
-
+                    <h2>{Data.Projects}</h2>
                     <p>Projects</p>
                   </div>
 
                   <div className="col-4">
                     <h2>{getExperience()}+</h2>
-
                     <p>Years</p>
                   </div>
                 </div>
