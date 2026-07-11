@@ -42,19 +42,39 @@ const Footer = () => {
               </p>
 
               <div className="d-flex gap-3 mt-2 mt-md-4 px-3 px-md-0">
-                <a href="#" className="footer-social">
+                <a
+                  href={Data.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social"
+                >
                   <FaFacebookF />
                 </a>
 
-                <a href="#" className="footer-social">
+                <a
+                  href={Data.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social"
+                >
                   <FaInstagram />
                 </a>
 
-                <a href="#" className="footer-social">
+                <a
+                  href={Data.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social"
+                >
                   <FaLinkedinIn />
                 </a>
 
-                <a href="#" className="footer-social">
+                <a
+                  href={Data.social.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social"
+                >
                   <FaYoutube />
                 </a>
               </div>
@@ -102,12 +122,22 @@ const Footer = () => {
 
               <div className="footer-contact d-flex align-items-center gap-2 mb-2">
                 <FaPhoneAlt />
-                <span>{Data.phone}</span>
+                <a
+                  href={`tel:${Data.phone}`}
+                  className="text-decoration-none text-light"
+                >
+                  {Data.phone}
+                </a>
               </div>
 
               <div className="footer-contact d-flex align-items-center gap-2 mb-2">
                 <FaEnvelope />
-                <span>{Data.email}</span>
+                <a
+                  href={`mailto:${Data.email}`}
+                  className="text-decoration-none text-light"
+                >
+                  {Data.email}
+                </a>
               </div>
             </div>
           </Col>

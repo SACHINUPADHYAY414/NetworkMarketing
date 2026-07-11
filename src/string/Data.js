@@ -10,17 +10,17 @@ export const Data = {
   email: "info@ahgrowthagency.com",
   startUp: "2025",
   countries: "20+",
-  social: {
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
-    linkedin: "https://linkedin.com",
-    youtube: "https://youtube.com"
-  },
   HappyClient: "120+",
   Projects: "1500+",
-  BusinessesServed:"500+",
-  Experts:"25+",
+  BusinessesServed: "500+",
+  Experts: "25+",
   ClientSatisfaction: "98%",
+  social: {
+    facebook: "https://www.facebook.com/ahgrowthagency",
+    instagram: "https://www.instagram.com/ahgrowthagency",
+    linkedin: "https://www.linkedin.com/company/ahgrowthagency",
+    youtube: "https://www.youtube.com/@ahgrowthagency"
+  },
   navLinks: [
     {
       name: "Home",
@@ -92,7 +92,7 @@ export const ContactData = {
     "We'd love to hear about your project. Contact our Digital Marketing experts today.",
 
   address: "Noida, Uttar Pradesh, India",
-  email: "info@ahgrowthagency.com",
+  email: "[info@ahgrowthagency.com](mailto:info@ahgrowthagency.com)",
   phone: "+91 9876543210",
 
   services: [
@@ -131,17 +131,17 @@ export const ContactData = {
   contactInfo: [
     {
       title: "Office",
-      value: "Noida, Uttar Pradesh, India",
+      value: Data.address,
       icon: "bi bi-geo-alt-fill"
     },
     {
       title: "Email",
-      value: "info@ahgrowthagency.com",
+      value: Data.email,
       icon: "bi bi-envelope-fill"
     },
     {
       title: "Phone",
-      value: "+91 9876543210",
+      value: Data.phone,
       icon: "bi bi-telephone-fill"
     }
   ],

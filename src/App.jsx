@@ -9,6 +9,7 @@ import AboutUs from "./pages/aboutUs/aboutUs";
 import Contact from "./pages/contact/Contact";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import Faq from "./pages/faq/Faq";
+import Audit from "./pages/audit/Audit";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq/>}/>
+        <Route path="/audit" element={<Audit/>}/>
       </Routes>
 
       <Footer />
