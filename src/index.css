@@ -32,8 +32,6 @@ html {
 .hero-content {
   color: #fff;
   max-width: 650px;
-
-  /* Same position every slide */
   min-height: 520px;
 
   display: flex;
@@ -42,12 +40,15 @@ html {
 
   animation: fadeUp 0.8s ease;
 }
+.hero-title{
+  font-size: clamp(2rem,4vw,3.2rem);
+  font-weight:800;
+  line-height:1.2;
+  color:#fff;
+}
 
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  min-height: 90px;
+.hero-highlight{
+  color:#ffc107;
 }
 
 .hero-desc {
@@ -639,4 +640,97 @@ html {
   .audit-title {
     font-size: 1.6rem !important;
   }
+}
+.why-glass-card{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.25);
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.4s;
+}
+
+.why-glass-card::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.12),
+        transparent
+    );
+    transform:rotate(25deg);
+    transition:.8s;
+}
+
+.why-glass-card:hover::before{
+    left:100%;
+}
+
+.why-glass-card:hover{
+    transform:translateY(-12px) scale(1.03);
+
+    background:rgba(255,255,255,.12);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.35);
+}
+
+.why-icon{
+    width:90px;
+    height:90px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:42px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    transition:.4s;
+}
+
+.why-glass-card:hover .why-icon{
+    transform:rotate(10deg) scale(1.1);
+    background:#ffc107;
+}
+
+.why-glass-card:hover .why-icon{
+    color:#111;
+}
+
+.why-glass-card .btn{
+    transition:.3s;
+}
+
+.why-glass-card:hover .btn{
+    transform:scale(1.05);
 }

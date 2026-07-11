@@ -65,6 +65,48 @@ const Services = () => {
       desc: "Build a strong and trusted brand identity online."
     }
   ];
+  const whyChoose = [
+    {
+      icon: "📈",
+      title: "ROI Focused Marketing",
+      desc: "We create marketing campaigns that generate measurable business growth and maximize return on investment."
+    },
+    {
+      icon: "👨‍💻",
+      title: "Experienced Marketing Experts",
+      desc: "Our team consists of skilled SEO specialists, designers, developers and digital marketers."
+    },
+    {
+      icon: "💰",
+      title: "Affordable Pricing",
+      desc: "Premium digital marketing solutions at competitive prices for every business size."
+    },
+    {
+      icon: "📊",
+      title: "Transparent Reporting",
+      desc: "Receive regular reports with complete campaign performance and growth insights."
+    },
+    {
+      icon: "🎯",
+      title: "Customized Strategy",
+      desc: "Every business is unique, so we build personalized marketing strategies."
+    },
+    {
+      icon: "⚡",
+      title: "Fast Customer Support",
+      desc: "Our support team is always available to help you whenever you need us."
+    },
+    {
+      icon: "🚀",
+      title: "Proven Lead Generation",
+      desc: "Generate quality leads that convert into loyal customers and business growth."
+    },
+    {
+      icon: "🤖",
+      title: "Latest AI Marketing Tools",
+      desc: "We use modern AI-powered tools to improve campaign performance and efficiency."
+    }
+  ];
 
   const card = (service, index, delay = 0) => (
     <div
@@ -103,6 +145,27 @@ const Services = () => {
       </div>
     </div>
   );
+
+  const whyCard = (item, index, delay = 0) => (
+    <div
+      className={`col-lg-3 col-md-6 col-12 ${delay ? "fade-card" : ""}`}
+      key={index}
+      style={delay ? { animationDelay: `${delay}s` } : {}}
+    >
+      <div className="why-glass-card h-100 text-center p-4">
+        <div className="why-icon">{item.icon}</div>
+
+        <h4 className="fw-bold mt-4 text-white">{item.title}</h4>
+
+        <p className="text-light opacity-75 flex-grow-1">{item.desc}</p>
+
+        <button className="btn btn-warning rounded-pill px-4 mt-3">
+          Learn More
+        </button>
+      </div>
+    </div>
+  );
+
   return (
     <section
       className="py-4 position-relative overflow-hidden"
@@ -124,21 +187,16 @@ const Services = () => {
       ></div>
 
       <div className="container position-relative">
-        <div className="text-center text-white mb-5">
-          <span
-            className="badge rounded-pill px-4 py-2"
-            style={{ background: "rgba(255,255,255,.15)" }}
-          >
-            🚀 Our Expertise
-          </span>
-
-          <h2 className="display-5 fw-bold mt-3">Digital Marketing Services</h2>
+        <div className="text-center text-white mb-4">
+          <h2 className="display-5 fw-bold mb-1">
+            Digital <span className="text-warning fw-bold">Marketing</span>{" "}
+            Services
+          </h2>
 
           <p className="lead text-light">
             Powerful solutions designed to grow your business online
           </p>
         </div>
-
         <div className="row text-center">
           {services.slice(0, 6).map((service, index) => card(service, index))}
         </div>
@@ -151,14 +209,31 @@ const Services = () => {
               )}
           </div>
         </div>
-
         <div className="text-center">
           <button
             className="btn btn-warning btn-lg rounded-pill px-3 fw-semibold fs-6 font-monospace"
             onClick={() => setShowAll(!showAll)}
           >
-            {showAll ? "Show Less ▲" : "Explore All Services 🚀"}
+            {showAll ? "Show Less ▲" : "Explore More Services 🚀"}
           </button>
+        </div>
+        {/* Why Choose */}
+        <div className="py-4 py-mb-4 pb-0">
+          <div className="text-center mb-4">
+            <h2 className="display-5 fw-bold mb-0 text-white">
+              {" "}
+              Why Choose <span className="text-warning">AH Growth </span>{" "}
+              Agency?
+            </h2>
+
+            <p className="text-light opacity-75">
+              Why We're the Best Digital Marketing Agency in Dhanbad
+            </p>
+          </div>
+
+          <div className="row g-4">
+            {whyChoose.map((item, index) => whyCard(item, index, index * 0.1))}
+          </div>
         </div>
       </div>
     </section>

@@ -2,31 +2,36 @@ import { useEffect, useState } from "react";
 import { Data, getExperience } from "../../string/Data";
 import TrustedBrands from "../trustedBrands/TrustedBrands";
 import Services from "../services/Services";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1800",
-    title: "Grow Your Business With Digital Marketing",
+    title: "Grow Your Business with",
+    highlight: "the Best Digital Marketing Agency in Dhanbad",
     description:
-      "We help brands increase traffic, generate qualified leads and grow revenue with SEO, Google Ads, Social Media Marketing and Web Solutions."
+      "Boost your business with SEO, Google Ads, Meta Ads, Social Media Marketing, Website Development, and Branding."
   },
   {
     image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1800",
-    title: "Turn Visitors Into Loyal Customers",
+    title: "Results-Driven",
+    highlight: "SEO & Google Ads",
     description:
-      "Our data-driven marketing strategies help businesses improve online visibility and achieve measurable growth."
+      "Increase website traffic, generate quality leads, and maximize ROI with data-driven marketing."
   },
   {
     image:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1800",
-    title: "SEO, Ads & Social Media Experts",
+    title: "Grow Faster with",
+    highlight: "Digital Marketing Experts",
     description:
-      "From search rankings to paid campaigns, we create digital strategies that deliver real business results."
+      "Custom marketing strategies that improve visibility, generate leads, and grow your business."
   }
 ];
 
 export default function LandingPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,20 +61,27 @@ url(${slides[currentSlide].image})`
                   🚀 Digital Marketing Agency
                 </span>
 
-                <h1 className="hero-title">{slides[currentSlide].title}</h1>
-
+                <h1 className="hero-title">
+                  {slides[currentSlide].title}{" "}
+                  <span className="hero-highlight">
+                    {slides[currentSlide].highlight}
+                  </span>
+                </h1>
                 <p className="hero-description">
                   {slides[currentSlide].description}
                 </p>
 
                 <div className="d-flex gap-3 flex-wrap mt-4 justify-content-center justify-content-md-start">
-                  <button className="btn btn-warning btn-lg rounded-pill px-3 px-md-4 fw-semibold fs-6">
+                  <button
+                    className="btn btn-warning btn-lg rounded-pill px-3 px-md-4 fw-semibold fs-6"
+                    onClick={() => navigate("/audit")}
+                  >
                     Get Free Consultation
                   </button>
-
+{/* 
                   <button className="btn btn-outline-light btn-lg rounded-pill px-3 px-md-4 fw-semibold">
                     View Portfolio
-                  </button>
+                  </button> */}
                 </div>
 
                 <div className="row mt-3 g-4">

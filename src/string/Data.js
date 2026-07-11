@@ -9,10 +9,10 @@ export const Data = {
   phone: "919876543210",
   email: "info@ahgrowthagency.com",
   startUp: "2025",
-  countries: "20+",
-  HappyClient: "120+",
-  Projects: "1500+",
-  BusinessesServed: "500+",
+  countries: "5+",
+  HappyClient: "50+",
+  Projects: "100+",
+  BusinessesServed: "100+",
   Experts: "25+",
   ClientSatisfaction: "98%",
   social: {
@@ -42,12 +42,20 @@ export const Data = {
           path: "/smm"
         },
         {
-          name: "Content Creation",
-          path: "/content-creation"
-        },
-        {
           name: "Performance Marketing",
           path: "/performance-marketing"
+        },
+        {
+          name: "Website Development",
+          path: "/website-developement"
+        },
+        {
+          name: "Local SEO",
+          path: "/local-seo"
+        },
+        {
+          name: "Content Creation",
+          path: "/content-creation"
         }
       ]
     },

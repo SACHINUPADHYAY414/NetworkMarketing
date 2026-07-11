@@ -39,8 +39,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* STATS */}
-
       <section className="stats">
         <div className="container">
           <div className="row g-4">
@@ -80,7 +78,7 @@ const About = () => {
       <section className="pb-4 mt-3 mt-md-4">
         <div className="container">
           <div className="text-center mb-3 mb-md-4">
-            <h2 className="text-center fw-semibold">Why Choose Us?</h2>
+            <h2 className="text-center fw-semibold">Why Choose AH Growth Agency?</h2>
 
             <p>
               We combine creativity, technology and strategy to build brands
@@ -115,9 +113,7 @@ const About = () => {
             <div className="col-lg-4">
               <div className="glass-card">
                 <div className="icon">💡</div>
-
                 <h4>Creative Solutions</h4>
-
                 <p>Unique ideas that help your brand get noticed.</p>
               </div>
             </div>

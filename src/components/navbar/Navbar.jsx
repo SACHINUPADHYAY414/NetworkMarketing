@@ -84,19 +84,20 @@ const NavbarComponent = () => {
         </Navbar.Collapse>
 
         {/* Mobile Offcanvas */}
-
         <Offcanvas show={showOffcanvas} onHide={closeMenu} placement="end">
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>
+            <Offcanvas.Title className="d-flex align-items-center gap-1">
               <img
                 src={Data.logo}
-                alt="Logo"
+                alt={Data.companyName}
                 width="40"
                 height="40"
-                className="rounded-circle me-2"
+                className="rounded-circle object-fit-cover"
               />
 
-              {Data.companyName}
+              <span className="fw-bold text-primary mb-0">
+                {Data.companyName}
+              </span>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className="d-flex flex-column">
