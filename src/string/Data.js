@@ -5,9 +5,10 @@ export const Data = {
   logo: Logo,
   companyName: "AH GROWTH AGENCY",
   footerBg: FooterBg,
-  address: "Noida, Uttar Pradesh, India",
-  phone: "919876543210",
-  email: "info@ahgrowthagency.com",
+  address:
+    "AH Growth Agency Jitu Library, Luby Circular Raod Near luxus Inn Hotel 826007",
+  phone: "919296940215",
+  email: "ahgrowthagency@gmail.com",
   startUp: "2025",
   countries: "5+",
   HappyClient: "50+",
@@ -15,11 +16,14 @@ export const Data = {
   BusinessesServed: "100+",
   Experts: "25+",
   ClientSatisfaction: "98%",
+  WHATSAPP_MESSAGE:
+    "Hi AH Growth Agency! 👋 I’m interested in your digital marketing services and would like to know how you can help grow my business.",
   social: {
-    facebook: "https://www.facebook.com/ahgrowthagency",
-    instagram: "https://www.instagram.com/ahgrowthagency",
-    linkedin: "https://www.linkedin.com/company/ahgrowthagency",
-    youtube: "https://www.youtube.com/@ahgrowthagency"
+    facebook: "https://www.facebook.com/profile.php?id=61592067171405",
+    instagram: "https://www.instagram.com/ahgrowth_agency/",
+    linkedin:
+      "https://www.linkedin.com/company/ah-growth-agency/?viewAsMember=true",
+    pinterest: "https://in.pinterest.com/ahgrowth/"
   },
   navLinks: [
     {
@@ -71,9 +75,7 @@ export const Data = {
       name: "Blog",
       path: "/blog"
     }
-  ],
-
-  WHATSAPP_MESSAGE: "Hello, I want to know more about your services."
+  ]
 };
 
 export const getExperience = () => {

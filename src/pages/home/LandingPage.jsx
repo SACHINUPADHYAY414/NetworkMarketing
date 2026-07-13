@@ -3,6 +3,7 @@ import { Data, getExperience } from "../../string/Data";
 import TrustedBrands from "../trustedBrands/TrustedBrands";
 import Services from "../services/Services";
 import { useNavigate } from "react-router-dom";
+import Testimonials from "../../components/testimonial/Testimonial";
 
 const slides = [
   {
@@ -108,6 +109,7 @@ url(${slides[currentSlide].image})`
 
       <TrustedBrands />
       <Services />
+      <Testimonials/>
     </>
   );
 }

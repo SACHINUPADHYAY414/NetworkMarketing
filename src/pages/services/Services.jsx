@@ -188,8 +188,26 @@ const Services = () => {
 
       <div className="container position-relative">
         <div className="text-center text-white mb-4">
-          <h2 className="display-5 fw-bold mb-1">
-            Digital <span className="text-warning fw-bold">Marketing</span>{" "}
+          <h2
+            className="display-5 fw-bold mb-0"
+            style={{
+              background: "linear-gradient(90deg,#ffffff,#cbd5e1)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              textShadow: "0 0 18px rgba(255,255,255,.35)"
+            }}
+          >
+            Our Digital{" "}
+            <span
+              style={{
+                background: "linear-gradient(90deg,#facc15,#fb923c)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                textShadow: "0 0 20px rgba(250,204,21,.35)"
+              }}
+            >
+              Marketing
+            </span>{" "}
             Services
           </h2>
 

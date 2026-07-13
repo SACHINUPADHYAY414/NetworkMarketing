@@ -9,7 +9,8 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaArrowRight
+  FaArrowRight,
+  FaPinterestP
 } from "react-icons/fa";
 
 import { Data } from "../../string/Data";
@@ -35,10 +36,11 @@ const Footer = () => {
               </h2>
 
               <p className="footer-text text-md-start text-center">
-                We help businesses grow with innovative Digital Marketing
-                strategies including SEO, Social Media Marketing, Google Ads,
-                Content Marketing, Performance Marketing and Website
-                Development.
+                As the Best Digital Marketing Agency in Dhanbad, AH Growth
+                Agency helps businesses grow with result-driven SEO, Social
+                Media Marketing, Content Marketing, Performance Marketing, and
+                Website Development services that increase traffic, generate
+                leads, and boost sales. .
               </p>
 
               <div className="d-flex gap-3 mt-2 mt-md-4 px-3 px-md-0">
@@ -70,12 +72,12 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href={Data.social.youtube}
+                  href={Data.social.pinterest}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-social"
                 >
-                  <FaYoutube />
+                  <FaPinterestP />
                 </a>
               </div>
             </div>

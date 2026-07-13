@@ -45,13 +45,13 @@ const About = () => {
             <div className="col-md-3">
               <div className="stat-card">
                 <h2>100+</h2>
-                <p>Projects Completed</p>
+                <p>Projects Successfully Delivered</p>
               </div>
             </div>
 
             <div className="col-md-3">
               <div className="stat-card">
-                <h2>50+</h2>
+                <h2>{Data.HappyClient}</h2>
                 <p>Happy Clients</p>
               </div>
             </div>
@@ -59,14 +59,14 @@ const About = () => {
             <div className="col-md-3">
               <div className="stat-card">
                 <h2>{getExperience()}+</h2>
-                <p>Years Experience</p>
+                <p>Industry Experience</p>
               </div>
             </div>
 
             <div className="col-md-3">
               <div className="stat-card">
                 <h2>24/7</h2>
-                <p>Support</p>
+                <p>Dedicated Customer Support</p>
               </div>
             </div>
           </div>
@@ -78,7 +78,9 @@ const About = () => {
       <section className="pb-4 mt-3 mt-md-4">
         <div className="container">
           <div className="text-center mb-3 mb-md-4">
-            <h2 className="text-center fw-semibold">Why Choose AH Growth Agency?</h2>
+            <h2 className="text-center fw-semibold">
+              Why Choose AH Growth Agency?
+            </h2>
 
             <p>
               We combine creativity, technology and strategy to build brands
