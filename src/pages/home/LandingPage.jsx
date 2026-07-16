@@ -56,7 +56,7 @@ url(${slides[currentSlide].image})`
       >
         <div className="container">
           <div className="row align-items-center min-vh-100">
-            <div className="col-lg-7">
+            <div className="col-lg-10">
               <div className="hero-content" key={currentSlide}>
                 <span className="hero-badge text-warning fw-semibold fst-italic">
                   🚀 Digital Marketing Agency

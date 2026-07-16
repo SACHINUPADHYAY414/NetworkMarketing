@@ -395,7 +395,7 @@ const SEO = () => {
 
         <Container>
           <div className="text-center mb-5">
-            <Badge
+            {/* <Badge
               bg=""
               className="px-3 py-2 rounded-pill"
               style={{
@@ -405,7 +405,7 @@ const SEO = () => {
               }}
             >
               WHY CHOOSE US
-            </Badge>
+            </Badge> */}
 
             <h2 className="display-5 fw-bold text-white">
               Why Choose
