@@ -37,7 +37,7 @@ const SEO = () => {
   return (
     <>
       <section
-        className="py-4  position-relative overflow-hidden text-center text-md-start"
+        className="py-4 position-relative overflow-hidden text-center text-md-start"
         style={{
           background: "linear-gradient(135deg,#030712,#111827,#1e1b4b)",
           minHeight: "100vh",
@@ -77,7 +77,7 @@ const SEO = () => {
                 🚀 SEO Marketing Agency
               </span>
 
-              <h2 className="display-5 fw-bold text-white lh-1 mb-4">
+              <h2 className="fs-1 fw-bold text-white lh-1 mb-4">
                 <span className="d-block">SEO Services</span>
                 <span className="text-warning d-block">in Dhanbad</span>
                 <span
@@ -223,7 +223,7 @@ const SEO = () => {
       >
         <Container>
           <div className="text-center mb-5">
-            <h2 className="fw-bold text-white">Why Invest in SEO?</h2>
+            <h1 className="fs-1 fw-bold text-white mb-0">Why Invest in SEO?</h1>
 
             <p className="text-light">
               SEO helps your business attract targeted customers, increase sales
@@ -297,7 +297,7 @@ const SEO = () => {
             <Col lg={6}>
               <span className="premium-badge">About Our SEO Services</span>
 
-              <h2 className="display-5 fw-bold mb-2 lh-1">
+              <h2 className="fs-1 fw-bold mb-2 lh-1">
                 Grow Your Business with
                 <span className="text-primary d-block">
                   Smart SEO Strategies
@@ -407,7 +407,7 @@ const SEO = () => {
               WHY CHOOSE US
             </Badge> */}
 
-            <h2 className="display-5 fw-bold text-white">
+            <h1 className="fs-1 fw-bold text-white mb-0">
               Why Choose
               <span
                 style={{
@@ -419,15 +419,10 @@ const SEO = () => {
                 {" "}
                 AH Growth Agency?
               </span>
-            </h2>
+            </h1>
 
-            <p
-              className="text-light mx-auto mt-3"
-              style={{ maxWidth: "760px" }}
-            >
-              We help startups, SMEs and growing businesses dominate Google
-              Search with customized SEO strategies that deliver measurable,
-              long-term business growth.
+            <p className="text-light mx-auto">
+              Trusted SEO Agency in Dhanbad for Growing Businesses
             </p>
           </div>
 
@@ -435,13 +430,13 @@ const SEO = () => {
             {[
               {
                 icon: <FaBullseye />,
-                title: "Customized SEO Strategies",
+                title: "Customized SEO strategies for every business",
                 text: "Tailor-made SEO campaigns designed around your business goals."
               },
 
               {
                 icon: <FaChartLine />,
-                title: "Affordable SEO Packages",
+                title: "Affordable SEO packages for startups and SMEs",
                 text: "Flexible SEO plans for startups, local businesses and SMEs."
               },
 
@@ -471,13 +466,13 @@ const SEO = () => {
 
               {
                 icon: <FaSearch />,
-                title: "Performance Tracking",
+                title: "Regular Performance Tracking",
                 text: "Track keyword rankings, website traffic and conversions every month."
               },
 
               {
                 icon: <FaCheckCircle />,
-                title: "Long-Term Growth",
+                title: "Focus on Long-Term Business Growth",
                 text: "Build lasting online visibility that keeps generating quality leads."
               }
             ].map((item, index) => (
@@ -485,9 +480,8 @@ const SEO = () => {
                 <div className="choose-card h-100">
                   <div className="choose-icon">{item.icon}</div>
 
-                  <h5 className="text-white fw-bold mt-4">{item.title}</h5>
-
-                  <p className="text-light mt-3">{item.text}</p>
+                  <h5 className="text-white fw-bold mt-2">{item.title}</h5>
+                  <p className="text-light mt-2">{item.text}</p>
 
                   <div className="choose-line"></div>
                 </div>
@@ -521,7 +515,7 @@ const SEO = () => {
               OUR SEO SERVICES
             </Badge> */}
 
-            <h2 className="display-5 fw-bold text-white">
+            <h2 className="fs-1 fw-bold text-white mb-0">
               Comprehensive
               <span
                 style={{
@@ -535,7 +529,7 @@ const SEO = () => {
               </span>
             </h2>
 
-            <p className="text-light mt-3 mx-auto" style={{ maxWidth: 750 }}>
+            <p className="text-light mx-auto" style={{ maxWidth: 750 }}>
               From technical optimization to content marketing, we provide
               end-to-end SEO services that increase visibility, traffic and
               qualified leads.
@@ -666,7 +660,7 @@ const SEO = () => {
               SEO PROCESS
             </Badge>
 
-            <h2 className="display-5 fw-bold text-white">
+            <h2 className="fs-1 fw-bold text-white mb-0">
               How We
               <span
                 style={{
@@ -680,7 +674,7 @@ const SEO = () => {
               </span>
             </h2>
 
-            <p className="text-light mt-3 mx-auto" style={{ maxWidth: 760 }}>
+            <p className="text-light mx-auto" style={{ maxWidth: 760 }}>
               Our proven SEO workflow focuses on technical excellence, content
               quality and measurable growth to help your business achieve
               long-term rankings.
@@ -776,7 +770,7 @@ const SEO = () => {
               BENEFITS OF SEO
             </Badge>
 
-            <h2 className="display-5 fw-bold text-white">
+            <h2 className="fs-1 fw-bold text-white mb-0">
               Why Invest In
               <span
                 style={{
@@ -790,7 +784,7 @@ const SEO = () => {
               </span>
             </h2>
 
-            <p className="text-light mt-3 mx-auto" style={{ maxWidth: 760 }}>
+            <p className="text-light mx-auto" style={{ maxWidth: 760 }}>
               Search Engine Optimization helps businesses generate consistent
               traffic, quality leads and long-term revenue without depending
               entirely on paid advertising.
@@ -906,7 +900,7 @@ const SEO = () => {
           <div className="text-center">
             <span className="cta-badge">🚀 FREE SEO CONSULTATION</span>
 
-            <h2 className="display-4 fw-bold text-white lh-1 mt-1">
+            <h2 className="fs-1 fw-bold text-white lh-1 mt-1 mb-0">
               Ready to Grow Your Business
               <span className="gradient-text d-block">
                 With Professional SEO?
@@ -914,8 +908,8 @@ const SEO = () => {
             </h2>
 
             <p
-              className="lead text-light mx-auto mt-4 mb-3"
-              style={{ maxWidth: 760 }}
+              className="lead text-light mx-auto mb-3"
+              style={{ maxWidth: 900 }}
             >
               Partner with <strong>AH Growth Agency</strong>, the trusted SEO
               Agency in Dhanbad, and start generating more traffic, quality

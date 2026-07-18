@@ -11,6 +11,7 @@ import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import Faq from "./pages/faq/Faq";
 import Audit from "./pages/audit/Audit";
 import Smm from "./pages/smm/Smm";
+import PerformanceMarketing from "./pages/pm/PerformanceMarketing";
 
 function App() {
   return (
@@ -22,12 +23,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/seo" element={<SEO />} />
-        <Route path="/smm" element={<Smm/>}/>
+        <Route path="/smm" element={<Smm />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/faq" element={<Faq/>}/>
-        <Route path="/audit" element={<Audit/>}/>
-
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/audit" element={<Audit />} />
+        <Route path="/performance-marketing" element={<PerformanceMarketing />}/>
       </Routes>
 
       <Footer />

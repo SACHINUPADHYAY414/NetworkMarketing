@@ -45,28 +45,28 @@ const About = () => {
             <div className="col-md-3">
               <div className="stat-card">
                 <h2>100+</h2>
-                <p>Projects Successfully Delivered</p>
+                <p className="text-black fw-semibold">Projects Successfully Delivered</p>
               </div>
             </div>
 
             <div className="col-md-3">
               <div className="stat-card">
                 <h2>{Data.HappyClient}</h2>
-                <p>Happy Clients</p>
+                <p className="text-black fw-bolder">Happy Clients</p>
               </div>
             </div>
 
             <div className="col-md-3">
               <div className="stat-card">
                 <h2>{getExperience()}+</h2>
-                <p>Industry Experience</p>
+                <p className="text-black fw-semibold">Industry Experience</p>
               </div>
             </div>
 
             <div className="col-md-3">
               <div className="stat-card">
                 <h2>24/7</h2>
-                <p>Dedicated Customer Support</p>
+                <p className="text-black fw-semibold">Dedicated Customer Support</p>
               </div>
             </div>
           </div>

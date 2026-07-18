@@ -1,3 +1,20 @@
+import {
+  FaHeart,
+  FaUsers,
+  FaChartLine,
+  FaWhatsapp,
+  FaArrowRight,
+  FaBullseye,
+  FaGoogle,
+  FaChartBar,
+  FaBolt,
+  FaHeadset,
+  FaSyncAlt,
+} from "react-icons/fa";
+
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+import { GiFocusedLightning } from "react-icons/gi";
+
 import Logo from "../assets/Logo.jpeg";
 import FooterBg from "../assets/FooterBg.jpg";
 
@@ -179,3 +196,86 @@ export const ContactData = {
     }
   ]
 };
+
+export const chooseCards = [
+  {
+    icon: FaHeart,
+    title: "Customized Social Media Strategies",
+    text: "Social media plans designed according to your business goals."
+  },
+  {
+    icon: FaHeart,
+    title: "Creative Content Tailored to Your Audience",
+    text: "Engaging reels, graphics, videos and captions."
+  },
+  {
+    icon: FaUsers,
+    title: "Audience Growth",
+    text: "Build strong relationships with your target audience."
+  },
+  {
+    icon: FaChartLine,
+    title: "Performance Growth",
+    text: "Data-driven campaigns for better ROI."
+  },
+  {
+    icon: FaWhatsapp,
+    title: "Dedicated Social Media Specialists",
+    text: "Regular updates and transparent reporting."
+  },
+  {
+    icon: FaArrowRight,
+    title: "Affordable Plans for Startups and SMEs",
+    text: "Flexible packages for startups and brands."
+  },
+  {
+    icon: GiFocusedLightning,
+    title: "Focus on Engagement, Leads, and ROI",
+    text: "Results-focused marketing for modern businesses."
+  }
+];
+
+// for Performance Developement Why Invest point
+
+export const chooseCardsPerformance = [
+  {
+    icon: FaBullseye,
+    title: "Customized Performance Marketing Strategies",
+    text: "Tailored advertising strategies designed around your business goals, audience, and budget."
+  },
+  {
+    icon: FaChartLine,
+    title: "ROI-Focused Campaign Management",
+    text: "We continuously optimize campaigns to maximize conversions and deliver the highest return on investment."
+  },
+  {
+    icon: FaGoogle,
+    title: "Google Ads & Meta Ads Specialists",
+    text: "Certified experts managing high-performing Google Ads and Meta Ads campaigns for measurable growth."
+  },
+  {
+    icon: FaMoneyBillTrendUp,
+    title: "Affordable Solutions for Startups & SMEs",
+    text: "Cost-effective performance marketing packages that help small businesses grow without overspending."
+  },
+  {
+    icon: FaSyncAlt,
+    title: "Continuous Campaign Optimization",
+    text: "We monitor, test, and refine campaigns regularly to improve performance and reduce ad costs."
+  },
+  {
+    icon: FaChartBar,
+    title: "Transparent Reporting",
+    text: "Receive detailed reports with insights into clicks, leads, conversions, and campaign performance."
+  },
+  {
+    icon: FaBolt,
+    title: "Conversion-Focused Approach",
+    text: "Every campaign is built to generate quality leads, sales, and measurable business results."
+  },
+  {
+    icon: FaHeadset,
+    title: "Dedicated Marketing Support",
+    text: "Get expert guidance, quick support, and strategic recommendations throughout your campaign journey."
+  }
+];

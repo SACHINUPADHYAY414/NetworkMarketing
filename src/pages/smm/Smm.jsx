@@ -15,6 +15,10 @@ import {
   FaTwitter
 } from "react-icons/fa";
 import Ludo from "../../assets/Ludo.png";
+import { MdCreate } from "react-icons/md";
+import { GiFocusedLightning } from "react-icons/gi";
+import WhyChooseSection from "../../components/whyChooseSection/WhyChooseSection";
+import { chooseCards } from "../../string/Data";
 
 const Smm = () => {
   const stats = [
@@ -36,48 +40,6 @@ const Smm = () => {
     }
   ];
 
-  const chooseCards = [
-    {
-      icon: <FaBullhorn />,
-      title: "Customized Social Media Strategies",
-      text: "Social media plans designed according to your business goals."
-    },
-
-    {
-      icon: <FaHeart />,
-      title: "Creative content tailored to your audience",
-      text: "Engaging reels, graphics, videos and captions."
-    },
-
-    {
-      icon: <FaUsers />,
-      title: "Audience Growth",
-      text: "Build strong relationships with your target audience."
-    },
-
-    {
-      icon: <FaChartLine />,
-      title: "Performance Growth",
-      text: "Data driven campaigns for better ROI."
-    },
-
-    {
-      icon: <FaWhatsapp />,
-      title: "Dedicated social media specialists",
-      text: "Regular updates and transparent reporting."
-    },
-
-    {
-      icon: <FaArrowRight />,
-      title: "Affordable plans for startups and SMEs",
-      text: "Flexible packages for startups and brands."
-    },
-    {
-      icon: "",
-      title: "Focus on engagement, leads, and ROI"
-    }
-  ];
-
   const services = [
     {
       icon: <FaChartLine />,
@@ -87,7 +49,7 @@ const Smm = () => {
     },
 
     {
-      icon: "",
+      icon: <MdCreate />,
       title: "Content Creation",
       discription:
         "Engaging graphics, reels, videos, carousels, and captions designed to increase reach and engagement."
@@ -158,7 +120,11 @@ const Smm = () => {
       discription:
         "Publish content consistently and launch targeted advertising campaigns."
     },
-    { title: "Optimization & Reporting", discription: "" }
+    {
+      title: "Optimization & Reporting",
+      discription:
+        "Track performance, optimize campaigns, and provide clear, transparent reports."
+    }
   ];
 
   const platforms = [
@@ -207,7 +173,7 @@ const Smm = () => {
                 🚀 Social Media Marketing Agency
               </span>
 
-              <h1 className="display-3 fw-bold text-white lh-1">
+              <h1 className="display-4 fw-bold text-white lh-1">
                 Grow Your Brand With
                 <span className="gradient-text d-block">
                   Social Media Marketing
@@ -226,13 +192,16 @@ const Smm = () => {
                 generate awareness, leads and loyal customers...
               </p>
 
-              <div className="d-flex flex-wrap gap-3 mt-4">
-                <Button className="rounded-pill">
+              <div className="d-column d-md-flex gap-3 mt-4 text-center text-md-start">
+                <Button className="rounded-pill mb-3">
                   Get Free Social Media Audit
                   <FaArrowRight className="ms-2" />
                 </Button>
 
-                <Button variant="outline-light" className="rounded-pill">
+                <Button
+                  variant="outline-light"
+                  className="rounded-pill mb-0 mb-md-3"
+                >
                   Start Growing Today
                 </Button>
               </div>
@@ -315,30 +284,12 @@ const Smm = () => {
             </Col>
           </Row>
 
-          <Row className="text-center mt-3 mb-3">
-            <Col>
-              <h2 className="text-white fw-bold mb-0">
-                Why Choose
-                <span className="text-info"> AH Growth Agency?</span>
-              </h2>
-
-              <p className="text-white">
-                Your Trusted Social Media Marketing Agency in Dhanbad.
-              </p>
-            </Col>
-          </Row>
-
-          <Row className="g-3">
-            {chooseCards.map((item, index) => (
-              <Col lg={3} md={6} key={index}>
-                <Card className="choose-card">
-                  <div className="choose-icon">{item.icon}</div>
-                  <h5 className="text-warning">{item.title}</h5>
-                  <p>{item.text}</p>
-                </Card>
-              </Col>
-            ))}
-          </Row>
+          <WhyChooseSection
+            title="Why Choose"
+            highlight="AH Growth Agency?"
+            subtitle="Your Trusted Social Media Marketing Agency in Dhanbad"
+            cards={chooseCards}
+          />
         </Container>
       </section>
 
@@ -438,7 +389,7 @@ const Smm = () => {
             </Col>
           </Row>
 
-          <Row className="g-4">
+          <Row className="g-3">
             {process.map((step, index) => (
               <Col lg={4} md={6} key={index}>
                 <div className="process-card">
@@ -453,10 +404,84 @@ const Smm = () => {
       </section>
 
       {/* ================= Benefits of Social Media Marketing ================= */}
-      {/* 
-      <section className="smm- py-4">
-        <Container></Container>
-      </section> */}
+
+      <section className="smm-benefits py-4">
+        <div className="container">
+          <div className="text-center mb-3 mb-md-4">
+            <h2 className="display-5 fw-bold text-white mb-0">
+              Benefits of Social
+              <span className="text-warning"> Media Marketing </span>{" "}
+            </h2>
+
+            <p className="text-white mx-auto" style={{ maxWidth: "650px" }}>
+              Why Invest in Social Media Marketing?
+            </p>
+          </div>
+
+          <div className="row g-4">
+            {[
+              "Increase Brand Awareness",
+              "Build Customer Trust",
+              "Generate Quality Leads",
+              "Improve Customer Engagement",
+              "Drive Website Traffic",
+              "Boost Sales & Conversions",
+              "Strengthen Brand Reputation",
+              "Stay Ahead of Competitors"
+            ].map((item, index) => (
+              <div className="col-md-6 col-lg-3" key={index}>
+                <div className="d-flex align-items-center">
+                  <div className="benefit-icon me-3">
+                    <i className="bi bi-check2"></i>
+                  </div>
+
+                  <p className="mb-0 fw-semibold">{item}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="growth-cta py-4 py-md-5">
+        <div className="container">
+          <div className="row align-items-center g-3">
+            <div className="col-lg-6">
+              <span className="badge rounded-pill bg-info-subtle text-info px-3 py-2 mb-1">
+                Social Media Growth Partner
+              </span>
+
+              <h1 className="display-5 fw-bold text-white">
+                Ready to Grow Your
+                <span className="text-info"> Brand on Social Media?</span>
+              </h1>
+
+              <p className="text-light opacity-75 fs-5 mt-3">
+                Partner with{" "}
+                <strong className="text-white">AH Growth Agency</strong>, a
+                trusted Social Media Marketing Agency in Dhanbad, and build a
+                strong online presence that attracts customers, increases
+                engagement, and drives business growth.
+              </p>
+
+              <button className="btn btn-info btn-md rounded-pill px-4 mt-3 fw-semibold">
+                Get Your Free Social Media Strategy
+                <i className="bi bi-arrow-right ms-2"></i>
+              </button>
+            </div>
+
+            <div className="col-lg-6 text-center">
+              <div className="position-relative">
+                <img
+                  src="https://global-uploads.webflow.com/621f6320a4c8a1030a6a2d65/630622cf00c984b21693c62f_we360.ai-hero-section.webp"
+                  alt="Digital Marketing"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
