@@ -10,14 +10,21 @@ import {
   FaBolt,
   FaHeadset,
   FaSyncAlt,
+  FaLaptopCode,
+  FaMobileAlt,
+  FaSearch,
+  FaShieldAlt,
+  FaRupeeSign,
+  FaTools,
+  FaComments
 } from "react-icons/fa";
 
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
+
 import { GiFocusedLightning } from "react-icons/gi";
 
 import Logo from "../assets/Logo.jpeg";
 import FooterBg from "../assets/FooterBg.jpg";
-
 export const Data = {
   logo: Logo,
   companyName: "AH GROWTH AGENCY",
@@ -232,6 +239,56 @@ export const chooseCards = [
     icon: GiFocusedLightning,
     title: "Focus on Engagement, Leads, and ROI",
     text: "Results-focused marketing for modern businesses."
+  }
+];
+
+export const websiteDevelopementData = [
+  {
+    icon: FaLaptopCode,
+    title: "Custom Website Design",
+    text: "Website designs tailored according to your business goals and brand identity."
+  },
+
+  {
+    icon: FaMobileAlt,
+    title: "Mobile Responsive Design",
+    text: "User-friendly layouts that work perfectly on mobile, tablet and desktop devices."
+  },
+
+  {
+    icon: FaSearch,
+    title: "SEO Friendly Structure",
+    text: "Optimized website structure to improve search engine visibility and rankings."
+  },
+
+  {
+    icon: FaBolt,
+    title: "Fast Loading Performance",
+    text: "Optimized code and assets for faster loading speed and better user experience."
+  },
+
+  {
+    icon: FaShieldAlt,
+    title: "Secure & Scalable Development",
+    text: "Reliable websites built with secure coding practices and future scalability."
+  },
+
+  {
+    icon: FaRupeeSign,
+    title: "Affordable Pricing",
+    text: "Cost-effective website solutions for startups and small businesses."
+  },
+
+  {
+    icon: FaTools,
+    title: "Website Maintenance & Support",
+    text: "Regular updates, improvements and ongoing technical support."
+  },
+
+  {
+    icon: FaComments,
+    title: "Transparent Communication",
+    text: "Clear updates and smooth communication throughout the project."
   }
 ];
 

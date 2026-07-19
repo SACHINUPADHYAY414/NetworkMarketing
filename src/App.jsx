@@ -12,6 +12,7 @@ import Faq from "./pages/faq/Faq";
 import Audit from "./pages/audit/Audit";
 import Smm from "./pages/smm/Smm";
 import PerformanceMarketing from "./pages/pm/PerformanceMarketing";
+import WebsiteDevlopement from "./pages/wd/WebsiteDevlopement";
 
 function App() {
   return (
@@ -28,7 +29,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/audit" element={<Audit />} />
-        <Route path="/performance-marketing" element={<PerformanceMarketing />}/>
+        <Route
+          path="/performance-marketing"
+          element={<PerformanceMarketing />}
+        />
+        <Route path="/website-developement" element={<WebsiteDevlopement />} />
       </Routes>
 
       <Footer />
