@@ -10,7 +10,7 @@ const WhyChooseSection = ({ title, highlight, subtitle, cards = [] }) => {
             <span className="text-info"> {highlight}</span>
           </h2>
 
-          <p className="text-white mt-2">{subtitle}</p>
+          <p className="text-white">{subtitle}</p>
         </Col>
       </Row>
 

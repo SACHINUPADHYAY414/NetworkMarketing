@@ -109,7 +109,7 @@ export default function Testimonials() {
 
                 <p className="review">"{item.review}"</p>
 
-                <div className="client mt-">
+                <div className="client">
                   <img src={item.image} alt={item.name} />
 
                   <div>
