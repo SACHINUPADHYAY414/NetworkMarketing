@@ -336,3 +336,47 @@ export const chooseCardsPerformance = [
     text: "Get expert guidance, quick support, and strategic recommendations throughout your campaign journey."
   }
 ];
+
+// FOr Local SEO why choose data
+export const WhyChooseData = [
+  {
+    icon: FaLaptopCode,
+    title: "Customized Local SEO strategies",
+    text: " "
+  },
+  {
+    icon: FaLaptopCode,
+    title: "Google Business Profile optimization",
+    text: ""
+  },
+  {
+    icon: FaLaptopCode,
+    title: "Local keyword research",
+    text: ""
+  },
+  {
+    icon: FaLaptopCode,
+    title: "Affordable packages for startups & SMEs",
+    text: ""
+  },
+  {
+    icon: FaLaptopCode,
+    title: "Transparent monthly reporting",
+    text: ""
+  },
+  {
+    icon: FaLaptopCode,
+    title: "White-hat SEO techniques",
+    text: ""
+  },
+  {
+    icon: FaLaptopCode,
+    title: "Continuous optimization",
+    text: ""
+  },
+  {
+    icon: FaLaptopCode,
+    title: "Dedicated support",
+    text: ""
+  }
+];

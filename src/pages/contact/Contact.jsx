@@ -58,11 +58,14 @@ const Contact = () => {
         <div className="text-center text-white mb-4">
           <span className="contact-badge">Digital Marketing Experts</span>
 
-          <h1 className="display-4 fw-bold mt-3">
+          <h1 className="display-6 d-none d-md-block fw-bold mt-3 mb-0">
             Grow Your Business With
             <span className="text-warning"> Digital Marketing</span>
           </h1>
-
+          <h1 className="fs-1 d-md-none d-block fw-bold mt-3 mb-0">
+            Grow Your Business With
+            <span className="text-warning"> Digital Marketing</span>
+          </h1>
           <p className="lead opacity-75">
             Get a free consultation and create powerful strategies to increase
             your traffic, leads and sales.
@@ -70,8 +73,8 @@ const Contact = () => {
         </div>
 
         <div className="row align-items-center g-4">
-          <div className="col-lg-5 text-white text-center text-lg-start">
-            <div className="marketing-image mx-auto mx-lg-0 d-none d-md-block">
+          <div className="col-lg-5 text-white text-center">
+            <div className="marketing-image mx-auto d-none d-md-block">
               <img
                 src={Data.logo}
                 alt="Logo"

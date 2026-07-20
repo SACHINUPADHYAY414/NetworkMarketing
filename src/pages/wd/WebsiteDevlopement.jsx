@@ -213,7 +213,7 @@ const HeroSection = () => {
                   Dhanbad for Modern Businesses
                 </span>
               </h1>
-              <h1 className="display-4 fw-bold text-white lh-1 d-none d-md-block">
+              <h1 className="display-6 fw-bold text-white lh-1 d-none d-md-block">
                 Website Development Company in
                 <span className="gradient-text d-block">
                   Dhanbad for Modern Businesses
@@ -309,7 +309,7 @@ const HeroSection = () => {
                 </span>
               </div>
 
-              <h2 className="display-5 d-none d-md-block fw-bold lh-1">
+              <h2 className="display-6 d-none d-md-block fw-bold lh-1">
                 Build a Website That
                 <span className="text-info"> Drives Business Growth</span>
               </h2>

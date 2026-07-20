@@ -20,21 +20,19 @@ const WhyChooseSection = ({ title, highlight, subtitle, cards = [] }) => {
 
           return (
             <Col lg={3} md={6} key={index}>
-             <Card className="choose-card h-100 d-flex flex-column">
-  <div className="choose-icon">
-    <Icon />
-  </div>
+              <Card className="choose-card h-100 d-flex flex-column">
+                <div className="choose-icon">
+                  <Icon />
+                </div>
 
-  <div className="d-flex flex-column flex-grow-1">
-    <h5 className="text-warning card-title-fixed">
-      {item.title}
-    </h5>
+                <div className="d-flex flex-column flex-grow-1">
+                  <h5 className="text-warning card-title-fixed">
+                    {item.title}
+                  </h5>
 
-    <p className="mb-0">
-      {item.text}
-    </p>
-  </div>
-</Card>
+                  <p className="mb-0">{item.text}</p>
+                </div>
+              </Card>
             </Col>
           );
         })}

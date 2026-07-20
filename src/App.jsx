@@ -16,6 +16,7 @@ import Audit from "./pages/audit/Audit";
 import Smm from "./pages/smm/Smm";
 import PerformanceMarketing from "./pages/pm/PerformanceMarketing";
 import WebsiteDevlopement from "./pages/wd/WebsiteDevlopement";
+import LocalSEO from "./pages/localSEO/LocalSEO";
 
 function AppContent() {
   const location = useLocation();
@@ -55,6 +56,7 @@ function AppContent() {
               path="/website-developement"
               element={<WebsiteDevlopement />}
             />
+            <Route path="/local-seo" element={<LocalSEO />} />
           </Routes>
 
           <Footer />
@@ -72,6 +74,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
 
 export default App;
