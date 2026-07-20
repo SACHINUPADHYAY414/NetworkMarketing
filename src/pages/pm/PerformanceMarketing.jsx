@@ -20,6 +20,8 @@ import {
 } from "react-icons/bs";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import WebServiceCard from "../../components/webServiceCard/WebServiceCard";
+import Process from "../../components/process/Process";
 
 const PerformanceMarketing = () => {
   const navigate = useNavigate();
@@ -242,17 +244,9 @@ const PerformanceMarketing = () => {
           <p>Advertising Solutions That Generate Results</p>
 
           <div className="row g-3 mt-2">
-            {performanceServices.map((service, index) => (
-              <div className="col-md-6 col-lg-3" key={index}>
-                <div className="pm-card">
-                  <div className={`pm-icon bg-${service.color}`}>
-                    {service.icon}
-                  </div>
-
-                  <h4 className="pm-title">{service.title}</h4>
-
-                  <p className="pm-text">{service.desc}</p>
-                </div>
+            {performanceServices.map((service) => (
+              <div className="col-md-6 col-lg-3" key={service.id}>
+                <WebServiceCard service={service} />
               </div>
             ))}
           </div>
@@ -289,24 +283,7 @@ const PerformanceMarketing = () => {
             </p>
           </div>
 
-          <div className="seo-timeline">
-            {marketingProcess.map((item, index) => (
-              <div
-                className={`timeline-item ${
-                  index % 2 === 0 ? "left" : "right"
-                }`}
-                key={index}
-              >
-                <div className="timeline-number">{item.no}</div>
-
-                <div className="timeline-card">
-                  <div className="timeline-icon">{item.icon}</div>
-                  <h4 className="text-white fw-bold mt-3">{item.title}</h4>
-                  <p className="text-light mb-0">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Process data={marketingProcess} />
         </Container>
       </section>
 

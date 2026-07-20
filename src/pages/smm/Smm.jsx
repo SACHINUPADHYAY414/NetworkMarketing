@@ -418,7 +418,7 @@ const Smm = () => {
             </p>
           </div>
 
-          <div className="row g-4">
+          <div className="row g-3">
             {[
               "Increase Brand Awareness",
               "Build Customer Trust",
