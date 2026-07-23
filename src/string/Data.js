@@ -16,7 +16,10 @@ import {
   FaShieldAlt,
   FaRupeeSign,
   FaTools,
-  FaComments
+  FaComments,
+  FaMapMarkedAlt,
+  FaSearchLocation,
+  FaWallet
 } from "react-icons/fa";
 
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
@@ -25,6 +28,7 @@ import { GiFocusedLightning } from "react-icons/gi";
 
 import Logo from "../assets/Logo.jpeg";
 import FooterBg from "../assets/FooterBg.jpg";
+
 export const Data = {
   logo: Logo,
   companyName: "AH GROWTH AGENCY",
@@ -340,43 +344,43 @@ export const chooseCardsPerformance = [
 // FOr Local SEO why choose data
 export const WhyChooseData = [
   {
-    icon: FaLaptopCode,
-    title: "Customized Local SEO strategies",
-    text: " "
+    icon: FaMapMarkedAlt,
+    title: "Customized Local SEO Strategies",
+    text: "Tailored SEO plans designed specifically for your business goals, target audience, and local market."
   },
   {
-    icon: FaLaptopCode,
-    title: "Google Business Profile optimization",
-    text: ""
+    icon: FaGoogle,
+    title: "Google Business Profile Optimization",
+    text: "Optimize your Google Business Profile to improve local visibility, rankings, and customer engagement."
   },
   {
-    icon: FaLaptopCode,
-    title: "Local keyword research",
-    text: ""
+    icon: FaSearchLocation,
+    title: "Local Keyword Research",
+    text: "Identify high-intent local keywords that help your business attract nearby customers searching online."
   },
   {
-    icon: FaLaptopCode,
-    title: "Affordable packages for startups & SMEs",
-    text: ""
+    icon: FaWallet,
+    title: "Affordable Packages for Startups & SMEs",
+    text: "Flexible and budget-friendly SEO solutions that deliver value without compromising on quality."
   },
   {
-    icon: FaLaptopCode,
-    title: "Transparent monthly reporting",
-    text: ""
+    icon: FaChartLine,
+    title: "Transparent Monthly Reporting",
+    text: "Receive detailed monthly reports with keyword rankings, traffic insights, and campaign performance."
   },
   {
-    icon: FaLaptopCode,
-    title: "White-hat SEO techniques",
-    text: ""
+    icon: FaShieldAlt,
+    title: "White-Hat SEO Techniques",
+    text: "We use ethical, Google-approved SEO practices to ensure sustainable long-term growth."
   },
   {
-    icon: FaLaptopCode,
-    title: "Continuous optimization",
-    text: ""
+    icon: FaSyncAlt,
+    title: "Continuous Optimization",
+    text: "Regular monitoring and improvements keep your website competitive and aligned with algorithm updates."
   },
   {
-    icon: FaLaptopCode,
-    title: "Dedicated support",
-    text: ""
+    icon: FaHeadset,
+    title: "Dedicated Support",
+    text: "Our SEO experts are always available to answer questions and provide ongoing assistance."
   }
 ];

@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 
 import { Data } from "../../string/Data";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -78,6 +79,15 @@ const Footer = () => {
                   className="footer-social"
                 >
                   <FaPinterestP />
+                </a>
+
+                <a
+                  href="https://x.com/ahgrowthagency"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social"
+                >
+                  <FaXTwitter/>
                 </a>
               </div>
             </div>

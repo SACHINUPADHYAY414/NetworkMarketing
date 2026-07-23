@@ -408,7 +408,7 @@ const Smm = () => {
       <section className="smm-benefits py-4">
         <div className="container">
           <div className="text-center mb-3 mb-md-4">
-            <h2 className="display-5 fw-bold text-white mb-0">
+            <h2 className="display-5 fw-bold text-white mb-0 lh-1">
               Benefits of Social
               <span className="text-warning"> Media Marketing </span>{" "}
             </h2>
@@ -430,7 +430,7 @@ const Smm = () => {
               "Stay Ahead of Competitors"
             ].map((item, index) => (
               <div className="col-md-6 col-lg-3" key={index}>
-                <div className="d-flex align-items-center">
+               <div className="d-flex align-items-center mx-auto w-100 px-4">
                   <div className="benefit-icon me-3">
                     <i className="bi bi-check2"></i>
                   </div>

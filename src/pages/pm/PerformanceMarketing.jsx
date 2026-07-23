@@ -143,11 +143,11 @@ const PerformanceMarketing = () => {
               </p>
 
               <div className="d-flex flex-column flex-md-row gap-2 my-3 justify-content-center justify-content-md-start">
-                <button className="btn btn-info rounded-pill px-3 py-2 fw-semibold">
+                <button className="btn btn-info rounded-pill px-3 py-2">
                   Get Free Campaign Audit
                 </button>
 
-                <button className="btn btn-light rounded-pill px-3 py-2 fw-semibold">
+                <button className="btn btn-light rounded-pill px-3 py-2">
                   Book a Strategy Call
                 </button>
               </div>
@@ -222,6 +222,7 @@ const PerformanceMarketing = () => {
           </div>
         </div>
       </section>
+
       <section className="smm-section py-4">
         <Container>
           <WhyChooseSection

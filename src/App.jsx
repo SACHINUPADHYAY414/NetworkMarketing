@@ -17,6 +17,7 @@ import Smm from "./pages/smm/Smm";
 import PerformanceMarketing from "./pages/pm/PerformanceMarketing";
 import WebsiteDevlopement from "./pages/wd/WebsiteDevlopement";
 import LocalSEO from "./pages/localSEO/LocalSEO";
+import ContentCreation from "./pages/contentCreation/ContentCreation";
 
 function AppContent() {
   const location = useLocation();
@@ -57,6 +58,7 @@ function AppContent() {
               element={<WebsiteDevlopement />}
             />
             <Route path="/local-seo" element={<LocalSEO />} />
+            <Route path="/content-creation" element={<ContentCreation />} />
           </Routes>
 
           <Footer />
