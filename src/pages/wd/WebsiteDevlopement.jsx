@@ -303,10 +303,12 @@ const HeroSection = () => {
             {/* RIGHT */}
 
             <div className="col-lg-6">
-              <div className="text-center text-lg-start">
+              <div className="premium-process-label text-white text-center text-lg-start">
+                <span className="label-line"></span>
                 <span className="mb-0 fst-italic fw-semibold text-white">
                   About Our Website Development Service
                 </span>
+                <span className="label-line"></span>
               </div>
 
               <h2 className="display-6 d-none d-md-block fw-bold lh-1">
@@ -409,9 +411,11 @@ const HeroSection = () => {
                 Our <span className="text-info">Website Development</span>{" "}
                 Services
               </h2>
-              <p className="text-light opacity-75">
-                Complete Website Solutions for Every Business
-              </p>
+              <div className="premium-process-label text-white">
+                <span className="label-line"></span>
+                <span>Complete Website Solutions for Every Business</span>
+                <span className="label-line"></span>
+              </div>
             </div>
           </div>
 
@@ -449,8 +453,11 @@ const HeroSection = () => {
                 Development Process
               </span>
             </h2>
-
-            <p className="text-light opacity-75">How We Build Your Website</p>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>How We Build Your Website</span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <Process data={processData} />
@@ -486,10 +493,14 @@ const HeroSection = () => {
                 Business Needs
               </span>
             </h2>
-            <p className="feature-subtitle mx-auto">
+            <div className="premium-process-label text-white">
+                <span className="label-line"></span>
+            <p className="mx-auto">
               Powerful features designed to help your website perform better,
               rank higher and convert more visitors into customers.
             </p>
+              <span className="label-line"></span>
+              </div>
           </div>
 
           <div className="row g-3">
@@ -515,11 +526,11 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className=" smm-section py-4">
+      <section className="smm-section py-4">
         <div className="container">
           <div className="row align-items-center g-3">
             <div className="col-lg-6">
-              <h2 className="display-6 d-md-block d-none fw-bold text-white lh-1">
+              <h2 className="fs-1 d-md-block d-none fw-bold text-white lh-1">
                 Why Your Business Needs
                 <span className="text-info"> a Professional Website</span>
               </h2>

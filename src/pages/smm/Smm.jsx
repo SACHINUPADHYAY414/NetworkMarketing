@@ -255,7 +255,7 @@ const Smm = () => {
           <Row className="justify-content-center text-center">
             <Col md={10}>
               <div className="text-center">
-                <h2 className="display-5 fw-bold text-white mb-0">
+                <h2 className="ls-1 fw-bold text-white mb-0">
                   About Our{" "}
                   <span className="text-warning"> Social Media Marketing </span>{" "}
                   Services
@@ -299,7 +299,7 @@ const Smm = () => {
         <Container>
           <Row className="text-center mb-2 mb-md-3">
             <Col>
-              <h2 className="display-5 fw-bold text-white mb-0">
+              <h2 className="ls-1 fw-bold text-white mb-0">
                 Our Social Media
                 <span
                   style={{
@@ -312,10 +312,11 @@ const Smm = () => {
                   Marketing Services{" "}
                 </span>
               </h2>
-
-              <p className="text-white lead">
-                Everything You Need to Grow on Social Media
-              </p>
+              <div className="premium-process-label text-white">
+                <span className="label-line"></span>
+                <span> Everything You Need to Grow on Social Media</span>
+                <span className="label-line"></span>
+              </div>
             </Col>
           </Row>
 
@@ -339,14 +340,16 @@ const Smm = () => {
         <Container>
           <Row className="text-center mb-3">
             <Col>
-              <h2 className="display-5 fw-bold text-white mb-0">
+              <h2 className="ls-1 fw-bold text-white mb-0">
                 {" "}
                 Platforms <span className="text-warning"> We </span> Manage
               </h2>
 
-              <p className="text-white lead">
-                Social media channels where we grow brands.
-              </p>
+              <div className="premium-process-label text-white">
+                <span className="label-line"></span>
+                <span>Social media channels where we grow brands.</span>
+                <span className="label-line"></span>
+              </div>
             </Col>
           </Row>
 
@@ -377,15 +380,18 @@ const Smm = () => {
         <Container>
           <Row className="text-center mb-3">
             <Col>
-              <h2 className="display-5 fw-bold text-white mb-0">
+              <h2 className="ls-1 fw-bold text-white mb-0">
                 {" "}
                 Our <span className="text-warning"> Process </span>{" "}
               </h2>
-
-              <p className="text-white lead">
-                How We Grow Your Social Media Presence How We Build Your Social
-                Media Growth
-              </p>
+              <div className="premium-process-label text-white">
+                <span className="label-line"></span>
+                <span>
+                  How We Grow Your Social Media Presence How We Build Your
+                  Social Media Growth
+                </span>
+                <span className="label-line"></span>
+              </div>
             </Col>
           </Row>
 
@@ -408,14 +414,16 @@ const Smm = () => {
       <section className="smm-benefits py-4">
         <div className="container">
           <div className="text-center mb-3 mb-md-4">
-            <h2 className="display-5 fw-bold text-white mb-0 lh-1">
+            <h2 className="ls-1 fw-bold text-white mb-0 lh-1">
               Benefits of Social
               <span className="text-warning"> Media Marketing </span>{" "}
             </h2>
 
-            <p className="text-white mx-auto" style={{ maxWidth: "650px" }}>
-              Why Invest in Social Media Marketing?
-            </p>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>Why Invest in Social Media Marketing?</span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <div className="row g-3">
@@ -430,7 +438,7 @@ const Smm = () => {
               "Stay Ahead of Competitors"
             ].map((item, index) => (
               <div className="col-md-6 col-lg-3" key={index}>
-               <div className="d-flex align-items-center mx-auto w-100 px-4">
+                <div className="d-flex align-items-center mx-auto w-100 px-4">
                   <div className="benefit-icon me-3">
                     <i className="bi bi-check2"></i>
                   </div>
@@ -451,7 +459,7 @@ const Smm = () => {
                 Social Media Growth Partner
               </span>
 
-              <h1 className="display-5 fw-bold text-white">
+              <h1 className="ls-1 fw-bold text-white">
                 Ready to Grow Your
                 <span className="text-info"> Brand on Social Media?</span>
               </h1>

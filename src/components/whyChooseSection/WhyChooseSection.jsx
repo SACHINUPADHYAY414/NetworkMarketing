@@ -9,8 +9,11 @@ const WhyChooseSection = ({ title, highlight, subtitle, cards = [] }) => {
             {title}
             <span className="text-info"> {highlight}</span>
           </h2>
-
-          <p className="text-light opacity-75">{subtitle}</p>
+          <div className="premium-process-label text-white">
+            <span className="label-line"></span>
+            <span>{subtitle}</span>
+            <span className="label-line"></span>
+          </div>
         </Col>
       </Row>
 

@@ -223,12 +223,17 @@ const SEO = () => {
       >
         <Container>
           <div className="text-center mb-5">
-            <h1 className="fs-1 fw-bold text-white mb-0">Why Invest in SEO?</h1>
-
-            <p className="text-light">
-              SEO helps your business attract targeted customers, increase sales
-              and build long-term online visibility.
-            </p>
+            <h1 className="fs-1 fw-bold text-white mb-0">
+              Why <span className="text-info">Invest</span> in SEO?
+            </h1>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>
+                SEO helps your business attract targeted customers, increase
+                sales and build long-term online visibility.
+              </span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <Row className="g-4">
@@ -420,10 +425,11 @@ const SEO = () => {
                 AH Growth Agency?
               </span>
             </h1>
-
-            <p className="text-light mx-auto">
-              Trusted SEO Agency in Dhanbad for Growing Businesses
-            </p>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>Trusted SEO Agency in Dhanbad for Growing Businesses</span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <Row className="g-4">
@@ -528,12 +534,15 @@ const SEO = () => {
                 SEO Solutions
               </span>
             </h2>
-
-            <p className="text-light mx-auto" style={{ maxWidth: 750 }}>
-              From technical optimization to content marketing, we provide
-              end-to-end SEO services that increase visibility, traffic and
-              qualified leads.
-            </p>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>
+                From technical optimization to content marketing, we provide
+                end-to-end SEO services that increase visibility, traffic and
+                qualified leads.
+              </span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <Row className="g-4">
@@ -674,11 +683,15 @@ const SEO = () => {
               </span>
             </h2>
 
-            <p className="text-light mx-auto" style={{ maxWidth: 760 }}>
-              Our proven SEO workflow focuses on technical excellence, content
-              quality and measurable growth to help your business achieve
-              long-term rankings.
-            </p>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>
+                Our proven SEO workflow focuses on technical excellence, content
+                quality and measurable growth to help your business achieve
+                long-term rankings.
+              </span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <div className="seo-timeline">
@@ -769,7 +782,6 @@ const SEO = () => {
             >
               BENEFITS OF SEO
             </Badge>
-
             <h2 className="fs-1 fw-bold text-white mb-0">
               Why Invest In
               <span
@@ -783,12 +795,15 @@ const SEO = () => {
                 SEO?
               </span>
             </h2>
-
-            <p className="text-light mx-auto" style={{ maxWidth: 760 }}>
-              Search Engine Optimization helps businesses generate consistent
-              traffic, quality leads and long-term revenue without depending
-              entirely on paid advertising.
-            </p>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>
+                Search Engine Optimization helps businesses generate consistent
+                traffic, quality leads and long-term revenue without depending
+                entirely on paid advertising.
+              </span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <Row className="g-4">

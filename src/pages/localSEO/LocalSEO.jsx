@@ -159,6 +159,18 @@ const LocalSEO = () => {
                   Dhanbad to Grow Your Local Business
                 </span>
               </h1>
+              <img
+                src={Laptop}
+                alt="Local SEO Services"
+                className="img-fluid d-md-none d-block mx-auto"
+                style={{
+                  width: "220px",
+                  height: "auto",
+                  objectFit: "contain",
+                  marginTop: "-10px",
+                  marginBottom: "-10px"
+                }}
+              />
               <p className="lead text-light mt-2 text-center text-md-start">
                 Want your business to appear when customers search for services
                 near them? AH Growth Agency provides Local SEO Services in
@@ -182,29 +194,29 @@ const LocalSEO = () => {
                 </Button>
               </div>
 
-              <Row className="mt-3 mt-md-2 text-white">
-                <Col xs={3}>
+              <Row className="mt-3 mt-md-2 text-white text-center">
+                <Col xs={6} md={3} className="mb-3">
                   <div>
                     <h2 className="fw-bold text-warning">100+</h2>
                     <small>Local SEO Optimizations Completed</small>
                   </div>
                 </Col>
 
-                <Col xs={3}>
+                <Col xs={6} md={3} className="mb-3">
                   <div>
                     <h2 className="fw-bold text-warning">50+</h2>
                     <small>Businesses Supported</small>
                   </div>
                 </Col>
 
-                <Col xs={3}>
+                <Col xs={6} md={3} className="mb-3">
                   <div>
                     <h2 className="fw-bold text-warning">98%</h2>
                     <small>Client Satisfaction</small>
                   </div>
                 </Col>
 
-                <Col xs={3}>
+                <Col xs={6} md={3} className="mb-3">
                   <div>
                     <h2 className="fw-bold text-warning">100%</h2>
                     <small>White-Hat SEO Practices</small>
@@ -213,7 +225,10 @@ const LocalSEO = () => {
               </Row>
             </Col>
 
-            <Col md={5} className="text-center mt-5 d-none d-md-flex mt-lg-0">
+            <Col
+              md={5}
+              className="text-center mt-5 d-none d-md-flex mt-lg-0 d-none d-md-block"
+            >
               <img
                 src={Laptop}
                 alt="Social Media Marketing"
@@ -350,8 +365,11 @@ const LocalSEO = () => {
             <span className="gradient-text"> SEO </span>
             Services
           </h2>
-
-          <p>Complete Local SEO Solutions</p>
+          <div className="premium-process-label text-white">
+            <span className="label-line"></span>
+            <span>Complete Local SEO Solutions</span>
+            <span className="label-line"></span>
+          </div>
 
           <div className="row g-3 mt-2">
             {LocalSeoData.map((service) => (
@@ -370,10 +388,11 @@ const LocalSEO = () => {
             <span className="gradient-text"> SEO </span>
             Process
           </h2>
-
-          <p className="mb-4 text-center">
-            How We Improve Your Local Visibility
-          </p>
+          <div className="premium-process-label text-white text-center mb-4">
+            <span className="label-line"></span>
+            <span> How We Improve Your Local Visibility</span>
+            <span className="label-line"></span>
+          </div>
 
           <Process data={processData} />
         </Container>
@@ -386,10 +405,11 @@ const LocalSEO = () => {
               Businesses
               <span className="text-warning"> We Help</span>
             </h2>
-
-            <p className="text-white mx-auto" style={{ maxWidth: "650px" }}>
-              Local SEO for Every Industry
-            </p>
+            <div className="premium-process-label text-white text-center">
+              <span className="label-line"></span>
+              <span>Local SEO for Every Industry</span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <div className="row g-3">

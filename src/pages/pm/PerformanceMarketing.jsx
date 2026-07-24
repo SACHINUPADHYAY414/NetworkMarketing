@@ -241,8 +241,11 @@ const PerformanceMarketing = () => {
             <span className="gradient-text"> Marketing </span>
             Services
           </h1>
-
-          <p>Advertising Solutions That Generate Results</p>
+          <div className="premium-process-label text-white">
+            <span className="label-line"></span>
+            <span>Advertising Solutions That Generate Results</span>
+            <span className="label-line"></span>
+          </div>
 
           <div className="row g-3 mt-2">
             {performanceServices.map((service) => (
@@ -278,10 +281,11 @@ const PerformanceMarketing = () => {
                 Marketing Process
               </span>
             </h2>
-
-            <p className="text-light mx-auto" style={{ maxWidth: 760 }}>
-              How We Deliver Better Results
-            </p>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>How We Deliver Better Results</span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <Process data={marketingProcess} />
@@ -295,8 +299,11 @@ const PerformanceMarketing = () => {
               Benefits of
               <span className="text-info"> Performance Marketing</span>
             </h2>
-
-            <p>Why Invest in Performance Marketing?</p>
+            <div className="premium-process-label text-white">
+              <span className="label-line"></span>
+              <span>Why Invest in Performance Marketing?</span>
+              <span className="label-line"></span>
+            </div>
           </div>
 
           <div className="benefit-network">
