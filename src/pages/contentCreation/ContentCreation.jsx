@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button, Card, Badge } from "react-bootstrap";
-import SEO from "../../assets/Seo.png";
+import SEO from "../../assets/SEO.png";
 
 const ContentCreation = () => {
   return (
