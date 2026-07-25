@@ -1,7 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Button, Card, Badge } from "react-bootstrap";
+
 import SEO from "../../assets/SEO.png";
+
 import WhyChooseSection from "../../components/whyChooseSection/WhyChooseSection";
+
 import {
   FaPenNib,
   FaSearch,
@@ -19,10 +22,11 @@ import {
   FaClipboardList,
   FaRocket,
   FaBullhorn,
+  FaBullseye,
   FaArrowRight
 } from "react-icons/fa";
-import WebServiceCard from "../../components/webServiceCard/WebServiceCard";
 
+import WebServiceCard from "../../components/webServiceCard/WebServiceCard";
 const ContentCreation = () => {
   const WhyChooseData = [
     {
@@ -519,21 +523,301 @@ const ContentCreation = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="premium-process-cta">
-            <div className="premium-cta-content">
-              <span>READY TO GROW YOUR BRAND?</span>
+      <section className="services-section content-impact-section py-3 py-md-4 px-2">
+        <Container>
+          <Row className="align-items-center g-5">
+            {/* LEFT SIDE */}
+            <Col lg={5}>
+              <div className="content-impact-intro">
+                <div className="premium-process-label justify-content-start">
+                  <span className="label-line"></span>
+                  <span>CONTENT MARKETING BENEFITS</span>
+                  <span className="label-line"></span>
+                </div>
 
-              <h3>
-                Turn Your Content Into
-                <strong> Business Growth.</strong>
-              </h3>
+                <h2 className="content-about-title">
+                  Why Invest in
+                  <span className="d-block content-gradient-text">
+                    Content Marketing?
+                  </span>
+                </h2>
+
+                <p className="content-about-description">
+                  Great content does more than attract visitors. It builds
+                  trust, improves visibility, generates qualified leads, and
+                  creates a strong foundation for sustainable business growth.
+                </p>
+
+                {/* IMPACT SCORE */}
+                <div className="content-impact-score">
+                  <div className="impact-score-number">
+                    <strong>8</strong>
+                    <span>
+                      Growth
+                      <br />
+                      Benefits
+                    </span>
+                  </div>
+
+                  <div className="impact-score-line"></div>
+
+                  <div className="impact-score-text">
+                    <span>ONE STRATEGY</span>
+                    <strong>LONG-TERM IMPACT</strong>
+                  </div>
+                </div>
+              </div>
+            </Col>
+
+            <Col lg={7}>
+              <div className="content-impact-list">
+                {[
+                  {
+                    number: "01",
+                    title: "Increase Organic Website Traffic",
+                    text: "Attract more visitors through valuable, search-friendly content."
+                  },
+                  {
+                    number: "02",
+                    title: "Improve Search Engine Rankings",
+                    text: "Build relevant content that strengthens your visibility across search engines."
+                  },
+                  {
+                    number: "03",
+                    title: "Build Trust & Brand Authority",
+                    text: "Establish your business as a reliable voice in your industry."
+                  },
+                  {
+                    number: "04",
+                    title: "Generate High-Quality Leads",
+                    text: "Turn relevant website traffic into genuine business opportunities."
+                  },
+                  {
+                    number: "05",
+                    title: "Educate Potential Customers",
+                    text: "Answer customer questions and help prospects make confident decisions."
+                  },
+                  {
+                    number: "06",
+                    title: "Increase Customer Engagement",
+                    text: "Create content that encourages interaction and meaningful conversations."
+                  },
+                  {
+                    number: "07",
+                    title: "Support SEO & Social Media",
+                    text: "Use one content strategy to strengthen multiple digital marketing channels."
+                  },
+                  {
+                    number: "08",
+                    title: "Drive Long-Term Business Growth",
+                    text: "Build a valuable content ecosystem that continues delivering results over time."
+                  }
+                ].map((item, index) => (
+                  <div className="content-impact-item" key={item.number}>
+                    {/* NUMBER */}
+                    <div className="impact-number">{item.number}</div>
+
+                    {/* CONNECTOR */}
+                    <div className="impact-connector">
+                      <span></span>
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className="impact-content">
+                      <div className="impact-title-row">
+                        <h3>{item.title}</h3>
+
+                        <div className="impact-arrow">
+                          <FaArrowRight />
+                        </div>
+                      </div>
+
+                      <p>{item.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section className="services-section content-matters-section py-3 py-md-4">
+        <Container>
+          <Row className="align-items-center">
+            <Col lg={7} className="content-matters-content-col">
+              <div className="content-matters-content">
+                <div className="premium-process-label justify-content-start">
+                  <span className="label-line"></span>
+                  <span>WHY CONTENT MARKETING MATTERS</span>
+                </div>
+
+                <h2 className="content-about-title">
+                  Content That Gets You
+                  <span className="d-block content-gradient-text">
+                    Discovered, Trusted & Remembered
+                  </span>
+                </h2>
+
+                <div className="content-matters-mobile-visual">
+                  <div className="content-matters-visual">
+                    <div className="matters-glow matters-glow-one"></div>
+                    <div className="matters-glow matters-glow-two"></div>
+
+                    <div className="matters-core">
+                      <div className="matters-core-icon">
+                        <FaBullseye />
+                      </div>
+
+                      <span>CONTENT</span>
+                      <strong>THAT MATTERS</strong>
+                    </div>
+
+                    <div className="matters-floating matters-top">
+                      <div className="matters-floating-icon">
+                        <FaSearch />
+                      </div>
+                      <div>
+                        <small>Visibility</small>
+                        <strong>Get Discovered</strong>
+                      </div>
+                    </div>
+
+                    <div className="matters-floating matters-right">
+                      <div className="matters-floating-icon">
+                        <FaComments />
+                      </div>
+                      <div>
+                        <small>Engagement</small>
+                        <strong>Build Relationships</strong>
+                      </div>
+                    </div>
+
+                    <div className="matters-floating matters-bottom">
+                      <div className="matters-floating-icon">
+                        <FaChartLine />
+                      </div>
+                      <div>
+                        <small>Growth</small>
+                        <strong>Drive Results</strong>
+                      </div>
+                    </div>
+
+                    <div className="matters-orbit"></div>
+                  </div>
+                </div>
+
+                <p className="content-about-description">
+                  Great content helps your business get discovered online,
+                  answer customer questions, and build lasting relationships
+                  with your audience.
+                </p>
+
+                <p className="content-about-description">
+                  As a trusted provider of{" "}
+                  <strong>Content Marketing Services in Dhanbad</strong>, we
+                  create content that supports your SEO strategy, strengthens
+                  your brand, and helps you achieve sustainable business growth.
+                </p>
+
+                <p className="content-about-description">
+                  Whether you need website content, blog articles, or social
+                  media copy, our team creates content that informs, engages,
+                  and converts.
+                </p>
+
+                <div className="matters-content-types">
+                  {/* Your content cards */}
+                </div>
+              </div>
+            </Col>
+
+            <Col lg={5} className="content-matters-desktop-visual">
+              <div className="content-matters-visual">
+                <div className="matters-glow matters-glow-one"></div>
+                <div className="matters-glow matters-glow-two"></div>
+
+                <div className="matters-core">
+                  <div className="matters-core-icon">
+                    <FaBullseye />
+                  </div>
+
+                  <span>CONTENT</span>
+                  <strong>THAT MATTERS</strong>
+                </div>
+
+                <div className="matters-floating matters-top">
+                  <div className="matters-floating-icon">
+                    <FaSearch />
+                  </div>
+                  <div>
+                    <small>Visibility</small>
+                    <strong>Get Discovered</strong>
+                  </div>
+                </div>
+
+                <div className="matters-floating matters-right">
+                  <div className="matters-floating-icon">
+                    <FaComments />
+                  </div>
+                  <div>
+                    <small>Engagement</small>
+                    <strong>Build Relationships</strong>
+                  </div>
+                </div>
+
+                <div className="matters-floating matters-bottom">
+                  <div className="matters-floating-icon">
+                    <FaChartLine />
+                  </div>
+                  <div>
+                    <small>Growth</small>
+                    <strong>Drive Results</strong>
+                  </div>
+                </div>
+
+                <div className="matters-orbit"></div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section className="services-section ready-to-grow-main py-0 py-md-4">
+        <div className="container">
+          <div className="content-final-cta-inner text-center text-md-start">
+            <div className="content-final-cta-heading">
+              <div className="premium-process-label justify-content-start">
+                <span className="label-line"></span>
+                <span>CONTENT THAT DRIVES GROWTH</span>
+                <span className="label-line"></span>
+              </div>
+              <h2 className="content-about-title">
+                Ready to Grow Your Brand
+                <span className="d-block content-gradient-text">
+                  with High-Quality Content?
+                </span>
+              </h2>
             </div>
 
-            <button className="premium-cta-button">
-              Start Your Journey
-              <FaArrowRight />
-            </button>
+            <div className="content-final-cta-divider"></div>
+
+            <div className="content-final-cta-info">
+              <p>
+                Partner with <strong>AH Growth Agency</strong> and let our
+                <strong> Content Marketing Services in Dhanbad</strong> help you
+                attract more visitors, build trust, and generate more leads with
+                strategic, results-driven content.
+              </p>
+
+              <a href="#contact" className="content-final-cta-button">
+                Get Your Free Content Strategy
+                <FaArrowRight />
+              </a>
+            </div>
           </div>
         </div>
       </section>
