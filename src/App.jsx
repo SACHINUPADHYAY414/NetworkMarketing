@@ -18,6 +18,8 @@ import PerformanceMarketing from "./pages/pm/PerformanceMarketing";
 import WebsiteDevlopement from "./pages/wd/WebsiteDevlopement";
 import LocalSEO from "./pages/localSEO/LocalSEO";
 import ContentCreation from "./pages/contentCreation/ContentCreation";
+import Blog from "./pages/blog/Blog";
+import BlogDetails from "./pages/blog/BlogDetails";
 
 function AppContent() {
   const location = useLocation();
@@ -59,6 +61,8 @@ function AppContent() {
             />
             <Route path="/local-seo" element={<LocalSEO />} />
             <Route path="/content-creation" element={<ContentCreation />} />
+            <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
           </Routes>
 
           <Footer />

@@ -1,10 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button, Card, Badge } from "react-bootstrap";
 
-import SEO from "../../assets/SEO.png";
-
-import WhyChooseSection from "../../components/whyChooseSection/WhyChooseSection";
-
 import {
   FaPenNib,
   FaSearch,
@@ -25,10 +21,12 @@ import {
   FaBullseye,
   FaArrowRight
 } from "react-icons/fa";
-
+import SEO from "../../assets/SEO.png";
+import WhyChooseSection from "../../components/whyChooseSection/WhyChooseSection";
 import WebServiceCard from "../../components/webServiceCard/WebServiceCard";
+
 const ContentCreation = () => {
-  const WhyChooseData = [
+ const WhyChooseData = [
     {
       icon: FaPenNib,
       title: "Customized Content Strategies",
@@ -71,7 +69,7 @@ const ContentCreation = () => {
     }
   ];
 
-  const ContentServices = [
+   const ContentServices = [
     {
       id: 1,
       icon: <FaLaptopCode />,
@@ -167,6 +165,7 @@ const ContentCreation = () => {
       text: "We monitor content performance, analyze important metrics, and continuously improve your strategy based on real data and insights."
     }
   ];
+  
 
   return (
     <div>
@@ -175,19 +174,19 @@ const ContentCreation = () => {
           <Row className="align-items-center">
             <Col md={7}>
               <span className="text-white fst-italic">
-                📍 Get Found by Local Customers
+                ✍️ Content That Engages, Educates & Converts
               </span>
 
-              <h1 className="fs-1 fw-bold text-white lh-1 d-md-none">
-                Local SEO Services in
+              <h1 className="fs-1 fw-bold text-white d-md-none">
+                Content Marketing Services in
                 <span className="gradient-text d-block">
-                  Dhanbad to Grow Your Local Business
+                  Dhanbad to Grow Your Business
                 </span>
               </h1>
               <h1 className="display-6 fw-bold text-white lh-1 d-none d-md-block">
-                Local SEO Services in
+                Content Marketing Services in
                 <span className="gradient-text d-block">
-                  Dhanbad to Grow Your Local Business
+                  Dhanbad to Grow Your Business
                 </span>
               </h1>
               <img
@@ -201,40 +200,40 @@ const ContentCreation = () => {
                 }}
               />
               <p className="lead text-light mt-0 mt-md-2">
-                Want your business to appear when customers search for services
-                near them? AH Growth Agency provides Local SEO Services in
-                Dhanbad that help startups, local businesses, and service
-                providers improve their visibility on Google Search and Google
-                Maps. Our customized Local SEO strategies help you attract
-                nearby customers, generate quality leads, and grow your business
-                organically.
+                Looking for professional Content Marketing Services in Dhanbad?
+                AH Growth Agency helps startups, local businesses, and growing
+                brands attract the right audience with high-quality,
+                SEO-optimized content. From website copy and blog articles to
+                social media content and email campaigns, we create content that
+                builds trust, improves search rankings, and turns visitors into
+                loyal customers.
               </p>
 
               <div className="d-column d-md-flex gap-3 mt-4 text-center text-md-start">
-                <Button className="rounded-pill mb-3">
-                  Get Free Local SEO Audit
+                <Button className="rounded-pill mb-2">
+                  Get a Free Content Strategy
                 </Button>
 
                 <Button
                   variant="outline-light"
                   className="rounded-pill mb-0 mb-md-3"
                 >
-                  Improve Local Rankings
+                  Let's Grow Your Brand
                 </Button>
               </div>
 
               <Row className="mt-3 mt-md-2 text-white">
                 <Col xs={3}>
                   <div>
-                    <h2 className="fw-bold text-warning">100+</h2>
-                    <small>Local SEO Optimizations Completed</small>
+                    <h2 className="fw-bold text-warning">500+</h2>
+                    <small>Content Pieces Created</small>
                   </div>
                 </Col>
 
                 <Col xs={3}>
                   <div>
                     <h2 className="fw-bold text-warning">50+</h2>
-                    <small>Businesses Supported</small>
+                    <small>Businesses Served</small>
                   </div>
                 </Col>
 
@@ -248,7 +247,7 @@ const ContentCreation = () => {
                 <Col xs={3}>
                   <div>
                     <h2 className="fw-bold text-warning">100%</h2>
-                    <small>White-Hat SEO Practices</small>
+                    <small>Original & SEO-Friendly Content</small>
                   </div>
                 </Col>
               </Row>
@@ -271,7 +270,6 @@ const ContentCreation = () => {
       <section className="services-section py-3 py-md-4 px-2">
         <Container>
           <Row className="align-items-center g-4 g-lg-5">
-            {/* LEFT CONTENT */}
             <Col lg={7}>
               <div className="content-about-content">
                 <div className="content-about-badge mb-2">
@@ -328,14 +326,9 @@ const ContentCreation = () => {
                 </div>
               </div>
             </Col>
-
-            {/* RIGHT PREMIUM VISUAL */}
             <Col lg={5}>
               <div className="content-growth-visual">
-                {/* Background Glow */}
                 <div className="content-glow"></div>
-
-                {/* Main Dashboard */}
                 <div className="content-dashboard-card">
                   <div className="d-flex justify-content-between align-items-center mb-4">
                     <div>
@@ -351,7 +344,6 @@ const ContentCreation = () => {
                     <div className="content-active-badge">● Active</div>
                   </div>
 
-                  {/* Growth Chart */}
                   <div className="content-chart-box">
                     <div className="content-chart-line">
                       <span></span>
@@ -376,8 +368,6 @@ const ContentCreation = () => {
                       <div style={{ height: "100%" }}></div>
                     </div>
                   </div>
-
-                  {/* Stats */}
                   <div className="row g-3 mt-3">
                     <div className="col-6">
                       <div className="content-stat-card">
@@ -408,8 +398,6 @@ const ContentCreation = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* Floating Cards */}
                 <div className="content-floating-card content-floating-top">
                   <span>✦</span>
                   <div>
@@ -445,13 +433,13 @@ const ContentCreation = () => {
       <section className="services-section py-3 py-md-4 px-2 text-center">
         <Container>
           <h2 className="fw-bold text-white lh-1 mb-0">
-            Our Local
-            <span className="gradient-text"> SEO </span>
+            Our Content
+            <span className="gradient-text"> Marketing </span>
             Services
           </h2>
           <div className="premium-process-label text-white">
             <span className="label-line"></span>
-            <span>Complete Local SEO Solutions</span>
+            <span>Content Solutions That Help Your Business Grow</span>
             <span className="label-line"></span>
           </div>
 
@@ -529,12 +517,11 @@ const ContentCreation = () => {
       <section className="services-section content-impact-section py-3 py-md-4 px-2">
         <Container>
           <Row className="align-items-center g-5">
-            {/* LEFT SIDE */}
             <Col lg={5}>
               <div className="content-impact-intro">
-                <div className="premium-process-label justify-content-start">
+                <div className="premium-process-label justify-content-center justify-content-lg-start text-center text-md-start">
                   <span className="label-line"></span>
-                  <span>CONTENT MARKETING BENEFITS</span>
+                  <span>Benefits Of Content Marketing</span>
                   <span className="label-line"></span>
                 </div>
 
@@ -551,7 +538,6 @@ const ContentCreation = () => {
                   creates a strong foundation for sustainable business growth.
                 </p>
 
-                {/* IMPACT SCORE */}
                 <div className="content-impact-score">
                   <div className="impact-score-number">
                     <strong>8</strong>
@@ -617,15 +603,11 @@ const ContentCreation = () => {
                   }
                 ].map((item, index) => (
                   <div className="content-impact-item" key={item.number}>
-                    {/* NUMBER */}
                     <div className="impact-number">{item.number}</div>
-
-                    {/* CONNECTOR */}
                     <div className="impact-connector">
                       <span></span>
                     </div>
 
-                    {/* CONTENT */}
                     <div className="impact-content">
                       <div className="impact-title-row">
                         <h3>{item.title}</h3>

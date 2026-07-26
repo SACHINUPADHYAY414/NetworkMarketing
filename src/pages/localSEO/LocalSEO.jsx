@@ -141,7 +141,7 @@ const LocalSEO = () => {
     <div>
       <section className="services-section py-3 py-md-4 px-2">
         <div className="container position-relative">
-          <Row className="align-items-center">
+          <Row className="align-items-center text-center  text-md-start">
             <Col md={7}>
               <span className="text-white fst-italic">
                 📍 Get Found by Local Customers
