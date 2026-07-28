@@ -4,6 +4,7 @@ import TrustedBrands from "../trustedBrands/TrustedBrands";
 import Services from "../services/Services";
 import { useNavigate } from "react-router-dom";
 import Testimonials from "../../components/testimonial/Testimonial";
+import Notification from "../../components/notification/Notification";
 
 const slides = [
   {
@@ -32,6 +33,8 @@ const slides = [
 
 export default function LandingPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showNotification, setShowNotification] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -40,6 +43,17 @@ export default function LandingPage() {
     }, 8000);
 
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const notificationTimer = setInterval(
+      () => {
+        setShowNotification(true);
+      },
+      Data.notificationIntervalMinutes * 60 * 1000
+    );
+
+    return () => clearInterval(notificationTimer);
   }, []);
 
   return (
@@ -79,7 +93,7 @@ url(${slides[currentSlide].image})`
                   >
                     Get Free Consultation
                   </button>
-{/* 
+                  {/* 
                   <button className="btn btn-outline-light btn-lg rounded-pill px-3 px-md-4 fw-semibold">
                     View Portfolio
                   </button> */}
@@ -109,7 +123,11 @@ url(${slides[currentSlide].image})`
 
       <TrustedBrands />
       <Services />
-      <Testimonials/>
+      <Testimonials />
+      <Notification
+        show={showNotification}
+        onClose={() => setShowNotification(false)}
+      />
     </>
   );
 }

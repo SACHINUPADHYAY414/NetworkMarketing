@@ -40,7 +40,7 @@ const Blog = () => {
                 <span className="gradient-text d-block">Growth Strategies</span>
               </h1>
 
-              <h1 className="display-6 fw-bold text-white lh-1 d-none d-md-block">
+              <h1 className="display-5 fw-bold text-white lh-1 d-none d-md-block">
                 Insights, Ideas &{" "}
                 <span className="gradient-text d-block">Growth Strategies</span>
               </h1>

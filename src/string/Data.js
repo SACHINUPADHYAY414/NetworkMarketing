@@ -53,6 +53,7 @@ export const Data = {
       "https://www.linkedin.com/company/ah-growth-agency/?viewAsMember=true",
     pinterest: "https://in.pinterest.com/ahgrowth/"
   },
+   notificationIntervalMinutes: 1,
   navLinks: [
     {
       name: "Home",

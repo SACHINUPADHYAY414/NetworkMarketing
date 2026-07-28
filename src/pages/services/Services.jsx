@@ -1,4 +1,15 @@
 import React, { useState } from "react";
+import {
+  FaHeartbeat,
+  FaBuilding,
+  FaGraduationCap,
+  FaUtensils,
+  FaShoppingCart,
+  FaIndustry,
+  FaHardHat,
+  FaRocket,
+  FaStore
+} from "react-icons/fa";
 
 const Services = () => {
   const [showAll, setShowAll] = useState(false);
@@ -107,6 +118,71 @@ const Services = () => {
       desc: "We use modern AI-powered tools to improve campaign performance and efficiency."
     }
   ];
+  const industriesData = [
+    {
+      id: 1,
+      title: "Healthcare",
+      description:
+        "Digital solutions that help healthcare businesses build trust and reach more patients.",
+      icon: <FaHeartbeat />
+    },
+    {
+      id: 2,
+      title: "Real Estate",
+      description:
+        "Grow your real estate brand with powerful digital marketing and lead generation strategies.",
+      icon: <FaBuilding />
+    },
+    {
+      id: 3,
+      title: "Education",
+      description:
+        "Connect with students and grow your educational institution through targeted campaigns.",
+      icon: <FaGraduationCap />
+    },
+    {
+      id: 4,
+      title: "Restaurants",
+      description:
+        "Attract more customers and increase your restaurant's online visibility.",
+      icon: <FaUtensils />
+    },
+    {
+      id: 5,
+      title: "E-commerce",
+      description:
+        "Drive online sales with conversion-focused marketing and performance strategies.",
+      icon: <FaShoppingCart />
+    },
+    {
+      id: 6,
+      title: "Manufacturing",
+      description:
+        "Build a strong B2B presence and generate quality leads for your manufacturing business.",
+      icon: <FaIndustry />
+    },
+    {
+      id: 7,
+      title: "Construction",
+      description:
+        "Strengthen your construction brand and reach the right customers online.",
+      icon: <FaHardHat />
+    },
+    {
+      id: 8,
+      title: "Startups",
+      description:
+        "Launch, grow and scale your startup with smart and result-driven digital strategies.",
+      icon: <FaRocket />
+    },
+    {
+      id: 9,
+      title: "Local Businesses",
+      description:
+        "Increase local visibility and attract more customers from your target location.",
+      icon: <FaStore />
+    }
+  ];
 
   const card = (service, index, delay = 0) => (
     <div
@@ -167,94 +243,140 @@ const Services = () => {
   );
 
   return (
-    <section
-      className="py-4 position-relative overflow-hidden"
-      style={{
-        background: "linear-gradient(135deg,#030712,#111827,#1e1b4b)"
-      }}
-    >
-      <div
-        className="position-absolute rounded-circle"
+    <>
+      <section
+        className="py-4 position-relative overflow-hidden"
         style={{
-          width: "400px",
-          height: "400px",
-          background: "#2563eb",
-          filter: "blur(140px)",
-          top: "20%",
-          left: "-150px",
-          opacity: 0.35
+          background: "linear-gradient(135deg,#030712,#111827,#1e1b4b)"
         }}
-      ></div>
+      >
+        <div
+          className="position-absolute rounded-circle"
+          style={{
+            width: "400px",
+            height: "400px",
+            background: "#2563eb",
+            filter: "blur(140px)",
+            top: "20%",
+            left: "-150px",
+            opacity: 0.35
+          }}
+        ></div>
 
-      <div className="container position-relative">
-        <div className="text-center text-white mb-4">
-          <h2
-            className="display-5 fw-bold mb-0"
-            style={{
-              background: "linear-gradient(90deg,#ffffff,#cbd5e1)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              textShadow: "0 0 18px rgba(255,255,255,.35)"
-            }}
-          >
-            Our Digital{" "}
-            <span
+        <div className="container position-relative">
+          <div className="text-center text-white mb-4">
+            <h2
+              className="display-5 fw-bold mb-0"
               style={{
-                background: "linear-gradient(90deg,#facc15,#fb923c)",
+                background: "linear-gradient(90deg,#ffffff,#cbd5e1)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-                textShadow: "0 0 20px rgba(250,204,21,.35)"
+                textShadow: "0 0 18px rgba(255,255,255,.35)"
               }}
             >
-              Marketing
-            </span>{" "}
-            Services
-          </h2>
-
-          <p className="lead text-light">
-            Powerful solutions designed to grow your business online
-          </p>
-        </div>
-        <div className="row text-center">
-          {services.slice(0, 6).map((service, index) => card(service, index))}
-        </div>
-        <div className={`collapse ${showAll ? "show" : ""}`}>
-          <div className="row text-center">
-            {services
-              .slice(6)
-              .map((service, index) =>
-                card(service, index + 6, (index + 1) * 0.15)
-              )}
-          </div>
-        </div>
-        <div className="text-center">
-          <button
-            className="btn btn-warning btn-lg rounded-pill px-3 fw-semibold fs-6 font-monospace"
-            onClick={() => setShowAll(!showAll)}
-          >
-            {showAll ? "Show Less ▲" : "Explore More Services 🚀"}
-          </button>
-        </div>
-        {/* Why Choose */}
-        <div className="py-4 py-mb-4 pb-0">
-          <div className="text-center mb-4">
-            <h2 className="display-5 fw-bold mb-0 text-white">
-              {" "}
-              Why Choose <span className="text-warning">AH Growth </span>{" "}
-              Agency?
+              Our Digital{" "}
+              <span
+                style={{
+                  background: "linear-gradient(90deg,#facc15,#fb923c)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  textShadow: "0 0 20px rgba(250,204,21,.35)"
+                }}
+              >
+                Marketing
+              </span>{" "}
+              Services
             </h2>
 
-            <p className="text-light opacity-75">
-              Why We're the Best Digital Marketing Agency in Dhanbad
+            <p className="lead text-light">
+              Powerful solutions designed to grow your business online
             </p>
           </div>
+          <div className="row text-center">
+            {services.slice(0, 6).map((service, index) => card(service, index))}
+          </div>
+          <div className={`collapse ${showAll ? "show" : ""}`}>
+            <div className="row text-center">
+              {services
+                .slice(6)
+                .map((service, index) =>
+                  card(service, index + 6, (index + 1) * 0.15)
+                )}
+            </div>
+          </div>
+          <div className="text-center">
+            <button
+              className="btn btn-warning btn-lg rounded-pill px-3 fw-semibold fs-6 font-monospace"
+              onClick={() => setShowAll(!showAll)}
+            >
+              {showAll ? "Show Less ▲" : "Explore More Services 🚀"}
+            </button>
+          </div>
+          {/* Why Choose */}
+          <div className="py-4 py-mb-4 pb-0">
+            <div className="text-center mb-4">
+              <h2 className="display-5 fw-bold mb-0 text-white">
+                Why Choose <span className="text-warning">AH Growth </span>{" "}
+                Agency?
+              </h2>
 
-          <div className="row g-4">
-            {whyChoose.map((item, index) => whyCard(item, index, index * 0.1))}
+              <p className="text-light opacity-75">
+                Why We're the Best Digital Marketing Agency in Dhanbad
+              </p>
+            </div>
+
+            <div className="row g-4">
+              {whyChoose.map((item, index) =>
+                whyCard(item, index, index * 0.1)
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="industries-section py-4">
+        <div className="container">
+          <div className="row justify-content-center text-center mb-3 mb-md-4">
+            <div className="col-lg-8">
+              <div className="premium-process-label text-white">
+                <span className="label-line"></span>
+                <span> INDUSTRIES WE SERVE</span>
+                <span className="label-line"></span>
+              </div>
+              <h2 className="industries-title">
+                Digital Growth Solutions for <span>Every Industry</span>
+              </h2>
+
+              <p className="industries-description">
+                We help businesses across different industries build a strong
+                digital presence, reach the right audience and achieve
+                sustainable growth.
+              </p>
+            </div>
+          </div>
+
+          <div className="row g-3">
+            {industriesData.map((industry) => (
+              <div className="col-12 col-sm-6 col-lg-4" key={industry.id}>
+                <div className="industry-card h-100">
+                  <div className="industry-icon">{industry.icon}</div>
+
+                  <div className="industry-content">
+                    <h3>{industry.title}</h3>
+
+                    <p>{industry.description}</p>
+
+                    <button type="button" className="industry-link">
+                      Explore Industry
+                      <span> →</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
